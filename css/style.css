@@ -509,7 +509,7 @@ img {
 }
 
 .hotel {
-  padding-top: 23px;
+  padding-top: 17px;
   padding-bottom: 70px;
 }
 
@@ -527,11 +527,11 @@ img {
 
 .hotel-info__offer {
   margin-left: 14px;
-  margin-top: 4px;
+  margin-top: 0px;
 }
 
 .hotel-info__name {
-  margin-top: 4px;
+  margin-top: 2px;
   margin-bottom: 0;
 }
 
@@ -716,6 +716,9 @@ img {
   }
   .logo {
     width: 99px;
+  }
+  .hotel {
+    padding-top: 3px;
   }
 }
 /*# sourceMappingURL=style.css.map */
