@@ -29,18 +29,17 @@
     font-weight: 400
   &-grid
     display: flex
-  &-booking-map
-    display: flex
-    flex-direction: column
     justify-content: space-between
-  &__slider
-    margin-left: 0
-    margin-right: 30px
+  // &__slider
+  //   margin-left: 0
+  //   margin-right: 30px
   &-slider
     width: 728px
     height: 450px
     position: relative
     border-radius: 8px
+    margin-left: 0
+    margin-right: 30px
     &::after
       content: ''
       position: absolute
@@ -75,6 +74,10 @@
       width: 100%
       height: 100%
       object-fit: cover
+  &-booking-map
+    display: flex
+    flex-direction: column
+    // justify-content: space-between
 .stars
   flex-basis: 100%
 .offer
@@ -106,6 +109,7 @@
   font-family: 'Nunito', sans-serif
   width: 350px
   min-height: 210px
+  margin-bottom: 27px
   padding: 26px
   border-radius: 8px
   background-color: $dark
@@ -113,7 +117,7 @@
   &__info
     display: flex
     justify-content: space-between
-    margin-bottom: 9px
+    margin-bottom: 10px
   &__price
     display: flex
     flex-direction: column
@@ -140,7 +144,7 @@
     font-size: 12px
     line-height: 16px
   &__description
-    margin-left: 9px
+    margin-left: 7px
   &__call-center
     display: flex
     align-items: center
@@ -174,4 +178,11 @@
     border: none
     cursor: pointer
 .map
-  border-radius: 8px
+  width: 350px
+  height: 213px
+  &__location
+    width: 100%
+    height: 100%
+    border-radius: 10px
+    border: none
+    overflow: hidden

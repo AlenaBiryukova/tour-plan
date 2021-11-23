@@ -13,7 +13,6 @@
     &__search
       margin-left: auto
     &-menu
-      //Заменила на space-around + top уменьшила с 22 до 20, для совпадения с макетом
       padding-top: 20px
       padding-bottom: 22px
       justify-content: space-around
@@ -25,8 +24,22 @@
       width: 340px
   .user
     &__avatar
-      // Добавлен margin слева, чтобы строка поиска совпала с макетом
       margin-left: 26px
+  .hotel
+    &-grid
+      flex-direction: column
+    &-slider
+      margin-bottom: 30px
+      margin-right: 0
+      width: 100%
+    &-booking-map
+      flex-direction: row
+  .booking
+    width: 340px
+    margin-right: 20px
+    margin-bottom: 0
+  .map
+    width: 340px
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -68,15 +81,33 @@
         margin-top: 0
       &__rating
         display: none
+    .swiper
+      &-wrapper
+        height: 100%
+    &-booking-map
+      flex-direction: column
+    .booking
+      width: 100%
+      margin-bottom: 20px
+      margin-right: 0
+    .map
+      width: 100%
 @media (max-width: 576px)
   .container
     max-width: 280px
   .navbar
     &-top
-      // Изменила top с 28 на 25 для совпадения с макетом
       padding-top: 25px
       padding-bottom: 28px
   .logo
     width: 99px
   .hotel
     padding-top: 3px
+    &-info
+      margin-bottom: 38px
+    &-slider
+      height: 173px
+    &-booking-map
+      justify-content: flex-start
+    .map
+      height: 165px
