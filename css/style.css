@@ -995,11 +995,6 @@ img {
   .hotel-slider__button--prev {
     left: 11px;
   }
-  .hotel-booking-map {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
   .hotel .map {
     height: 165px;
   }
