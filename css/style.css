@@ -811,8 +811,9 @@ img {
   height: 213px;
 }
 
-.map#map {
+#map > ymaps {
   border-radius: 10px;
+  overflow: hidden;
 }
 
 @media (max-width: 1200px) {
@@ -944,6 +945,10 @@ img {
   .hotel .swiper-wrapper {
     height: 100%;
   }
+  .hotel-slider__button {
+    width: 27px;
+    height: 27px;
+  }
   .hotel-booking-map {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -979,6 +984,16 @@ img {
   }
   .hotel-slider {
     height: 173px;
+  }
+  .hotel-slider__button {
+    width: 12px;
+    height: 12px;
+  }
+  .hotel-slider__button--next {
+    right: 11px;
+  }
+  .hotel-slider__button--prev {
+    left: 11px;
   }
   .hotel-booking-map {
     -webkit-box-pack: start;
