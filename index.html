@@ -14,8 +14,6 @@
     rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=24d49834-a880-4f5f-829c-ed5b3fa7d6e2&lang=en_RU">
-  </script>
 </head>
 <body>
 
@@ -32,7 +30,11 @@
         </a>
 
         <form action="#" class="search navbar__search">
-          <input type="text" placeholder="Search Location" class="search__input">
+          <input 
+            type="text"
+            placeholder="Search Location"
+            class="search__input"
+          >
           <button class="search__button">
             <img 
               src="img/search.svg"
@@ -270,6 +272,30 @@
     <!-- /.container -->
   </section>
   <!-- /.hotel -->
+
+  <section class="newsletter">
+    <div class="newsletter-wrapper">
+      
+      <h2 class="newsletter-title newsletter__title">
+        subscribe to our
+        <span class="newsletter-title__strong">Newsletter</span>
+      </h2>
+
+      <form action="#" class="subscribe newsletter__subscribe">
+        <input 
+          type="text"
+          placeholder="Your email address"
+          class="subscribe__input"
+        >
+        <button class="subscribe__button">
+          Send
+        </button>
+      </form>
+      
+    </div>
+    <!-- /.newsletter-wrapper -->
+  </section>
+  <!-- /.newsletter -->
 
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
