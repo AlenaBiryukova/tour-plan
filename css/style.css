@@ -863,6 +863,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 381px;
   margin: 0;
   color: #FFFFFF;
   font-weight: 300;
@@ -906,10 +907,10 @@ img {
   height: 100%;
   border: none;
   background-color: #ec1f46;
+  color: #FFFFFF;
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
-  color: #FFFFFF;
   cursor: pointer;
 }
 
