@@ -13,17 +13,3 @@ const hotelSwiper = new Swiper('.hotel-slider', {
     onlyInViewport: false,
   },
 });
-
-var myMap;
-ymaps.ready(init);
-function init () {
-    myMap = new ymaps.Map('map', {
-        center: [25.078276, 55.134926],
-        zoom: 17
-    }, {
-        searchControlProvider: 'yandex#search'
-    });
-    document.getElementById('destroyButton').onclick = function () {
-        myMap.destroy();
-    };
-}
