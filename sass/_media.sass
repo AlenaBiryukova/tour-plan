@@ -1,6 +1,9 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
+  .card
+    width: 230px
+    height: 230px
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -58,6 +61,18 @@
           right: 0px
         &--prev
           left: 0px
+  .activities
+    padding-top: 47px
+    &-wrapper
+      flex-wrap: wrap
+    &__card
+      margin-bottom: 20px
+  .card
+    width: 340px
+    height: 255px
+    &__title
+      max-width: 200px
+
 @media (max-width: 767px)
   .container,
   .newsletter-wrapper
@@ -156,6 +171,10 @@
           transform: translate(-50%, 0)
       &__text
         text-align: left
+  .card
+    width: 48%
+    height: 255px
+
 @media (max-width: 576px)
   .container
     max-width: 280px
@@ -197,3 +216,14 @@
     width: 95%
     &__input
       padding-left: 20px
+  .activities
+    padding-top: 22px
+    &__title
+      margin-bottom: 38px
+      font-size: 18px
+      line-height: 23px
+    &__card
+      margin-bottom: 22px
+  .card
+    width: 340px
+    height: 255px
