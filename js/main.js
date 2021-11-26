@@ -24,3 +24,8 @@ const reviewsSwiper = new Swiper('.reviews-slider', {
     prevEl: '.reviews-slider__button--prev',
   },
 });
+
+$('.newsletter').parallax({
+  imageSrc: 'img/newsletter-bg.jpeg',
+  speed: 0.3,
+});
