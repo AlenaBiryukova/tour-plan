@@ -45,6 +45,13 @@
     margin-bottom: 0
   .map
     width: 340px
+  .packages
+    &__title
+      margin-bottom: 50px
+      font-size: 30px
+      line-height: 43px
+    &-wrapper
+      grid-template-columns: repeat(2,minmax(min-content, 350px))
   .reviews
     &__title
       margin-bottom: 50px
@@ -132,6 +139,28 @@
       margin-right: 0
     .map
       width: 100%
+  .packages
+    padding-top: 29px
+    &__title
+      font-size: 20px
+      line-height: 23px
+      margin-bottom: 35px
+    &-wrapper
+      grid-template-columns: minmax(min-content, 1fr)
+  .pack
+    &:first-child
+      grid-column: span 1
+    &__offer
+      padding: 8px 11px
+      font-size: 12px
+      line-height: 15px
+  .detailed
+    &-pack
+      &__image
+        width: 300px
+      &__info
+        padding: 20px
+        grid-template-rows: 15% 190px 122px auto
   .newsletter
     padding: 92px 0 93px 0
     &-wrapper
@@ -227,3 +256,37 @@
   .card
     width: 340px
     height: 255px
+  .card-2
+    order: 2
+  .card-3
+    order: 1
+  .card-4
+    order: 3
+  .packages
+    padding-top: 22px
+    &__title
+      margin-bottom: 38px
+      font-size: 18px
+      line-height: 23px
+  .pack
+    height: 350px
+    &__image
+      height: 150px
+    &__offer
+      top: 15px
+    &__info
+      padding: 10px 15px
+    &__title
+      margin-bottom: 18px
+      line-height: 19px
+    &__room
+      margin-bottom: 18px
+    &__description
+      font-size: 10px
+    &-price
+      &__old
+        font-size: 12px
+        line-height: 15px
+  .detailed
+    &-pack
+      display: none
