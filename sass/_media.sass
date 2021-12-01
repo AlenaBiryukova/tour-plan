@@ -88,16 +88,13 @@
   .footer
     padding-top: 73px
     &-wrapper
-      grid-template-columns: repeat(6, 1fr)
+      grid-template-columns: repeat(8, 1fr)
       grid-row-gap: 50px
     &__input
-      flex-basis: 49%
+      height: 53px
     &__logo
       width: 95px
       grid-row: 1 / 2
-      grid-column: span 1
-    &__category
-      grid-row: 2 / 3
       grid-column: span 1
     &__social
       &-network
@@ -106,27 +103,29 @@
         align-self: center
         margin-left: 15px
         margin-top: 15px
+    &__category
+      grid-row: 2 / 3
+      grid-column: span 1
     &__additional
-      grid-column: span 3
+      grid-column: span 4
       margin-left: 30px
     &__legal
-      grid-column: span 2
-    &__title
-      // &-contact
-      //   line-height: 23px
-      //   margin-bottom: 16px
-      // &--inline
-      //   margin: 0 43px 0 0
-      &--mb-3
-        margin-bottom: 22px
-        line-height: 45px
+      grid-column: span 3
+      margin-left: 14px
+      justify-self: start
     &__contact
       &-details
         grid-row: 3
-        grid-column: span 5
+        grid-column: span 6
       &-form
         grid-row: 4
-        grid-column: span 5
+        grid-column: span 6
+    &__icon
+      &-wrapper
+        min-width: 47px
+        padding: 6px
+    &__text
+      margin-bottom: 21px
     &__link
       &:hover
         color: inherit
@@ -265,6 +264,35 @@
   .card
     width: 48%
     height: 255px
+  .footer
+    &-wrapper
+      grid-template-columns: repeat(5, 1fr)
+    &__logo
+      grid-row: 1 / 2
+      grid-column: span 1
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 4
+    &__category
+      grid-row: 3 / 3
+      grid-column: span 1
+    &__additional
+      grid-row: 2 / 3
+      grid-column: span 2
+      margin-left: 0px
+    &__legal
+      grid-row: 2 / 3
+      grid-column: span 2
+      margin-left: 30px
+    &__contact
+      &-details
+        grid-row: 4
+        grid-column: span 5
+      &-form
+        grid-row: 5
+        grid-column: span 5
+
 @media (max-width: 576px)
   .container
     max-width: 280px
@@ -370,7 +398,6 @@
     &__additional
       grid-row: 4
       grid-column: 1
-      margin: 0
     &__category
       grid-row: 5
       grid-column: 1
@@ -378,7 +405,7 @@
     &__legal
       grid-row: 3
       grid-column: 1
-      justify-self: start
+      margin-left: 0
     &__contact
       &-details
         grid-row: 6
@@ -386,7 +413,7 @@
       &-form
         grid-row: 7
         grid-column: 1
-        margin-top: 26px
+        margin-top: 22px
     &__title
       line-height: 14px
       &--inline
@@ -398,7 +425,8 @@
         margin-bottom: 18px
     &__icon
       &-wrapper
-        min-width: 29px
+        min-width: 32px
+        padding: 2px
     &__input
       flex-basis: 100%
       height: 52px
@@ -410,3 +438,5 @@
       margin-bottom: 14px
     &__button
       order: 2
+    &__text
+      line-height: 158%
