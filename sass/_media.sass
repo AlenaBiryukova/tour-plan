@@ -356,7 +356,7 @@
     padding-top: 67px
     &-wrapper
       grid-template-columns: 1fr
-      grid-row-gap: 25px
+      grid-row-gap: 40px
     &__logo
       grid-row: 1
       grid-column: 1
@@ -366,8 +366,7 @@
         grid-column: 1
         flex-direction: column
         align-items: flex-start
-        margin-left: 0px
-        margin-bottom: 27px
+        margin: 0px
     &__additional
       grid-row: 4
       grid-column: 1
@@ -379,6 +378,7 @@
     &__legal
       grid-row: 3
       grid-column: 1
+      justify-self: start
     &__contact
       &-details
         grid-row: 6
@@ -386,6 +386,27 @@
       &-form
         grid-row: 7
         grid-column: 1
+        margin-top: 26px
     &__title
+      line-height: 14px
       &--inline
-        margin: 0 43px 21px 0px
+        margin: 0 0 24px 0px
+      &-contact
+        line-height: 23px
+        margin-bottom: 23px
+      &--mb-3
+        margin-bottom: 18px
+    &__icon
+      &-wrapper
+        min-width: 29px
+    &__input
+      flex-basis: 100%
+      height: 52px
+    &__message
+      margin-bottom: 13px
+    &__info
+      order: 1
+      flex-basis: 100%
+      margin-bottom: 14px
+    &__button
+      order: 2
