@@ -12,15 +12,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
-    rel="stylesheet">
+    rel="stylesheet"
+  >
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <header class="navbar">
+  <header class="navbar navbar__mobile--fixed">
     <div class="container">
-      <div class="navbar-top">
+      <div class="navbar-top navbar-top--fixed">
         
         <a href="#" class="logo">
           <img 
@@ -30,7 +31,7 @@
           >
         </a>
 
-        <form action="#" class="search navbar__search">
+        <form action="#" class="search navbar__search navbar__search--mobile--hidden">
           <input 
             type="text"
             placeholder="Search Location"
@@ -44,7 +45,7 @@
           </button>
         </form>
 
-        <a href="#" class="user navbar__user">
+        <a href="#" class="user navbar__user navbar__user--mobile--hidden">
           <img 
             src="img/user-avatar.jpg"
             alt="Avatar: Nathan"
@@ -68,6 +69,31 @@
       <div class="container">
 
         <ul class="navbar-menu">
+          <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+            <a href="#" class="user navbar__user navbar__user--mobile--visible">
+              <img
+                src="img/user-avatar.jpg"
+                alt="Avatar: Nathan"
+                class="user__avatar"
+              >
+              <span class="user__name">Nathan</span>
+            </a>
+          </li>
+          <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+            <form action="#" class="search navbar__search navbar__search--mobile--visible">
+              <input 
+                type="text"
+                placeholder="Search Location"
+                class="search__input"
+              >
+              <button class="search__button">
+                <img 
+                  src="img/search.svg"
+                  alt="Icon: search"
+                >
+              </button>
+            </form>
+          </li>
           <li class="navbar-menu__item">
             <a href="#" class="navbar-menu__link">All Deals</a>
           </li>
@@ -225,14 +251,22 @@
           
               <div class="booking__room">
                 <div class="booking__text">
-                  <img src="img/person-room__guests.svg" alt="Icon: guests" class="booking__icon">
+                  <img 
+                    src="img/person-room__guests.svg"
+                    alt="Icon: guests"
+                    class="booking__icon"
+                  >
                   <span class="booking__description">
                     2 x Guests
                   </span>
                 </div>
           
                 <div class="booking__text">
-                  <img src="img/person-room__room.svg" alt="Icon: room" class="booking__icon">
+                  <img
+                    src="img/person-room__room.svg"
+                    alt="Icon: room"
+                    class="booking__icon"
+                  >
                   <span class="booking__description">
                     1 x Room
                   </span>
@@ -246,7 +280,11 @@
             <div class="booking__call-center">
               <span class="booking__call-text">Quick Booking</span>
               <a href="tel:12100" class="booking__call-number">
-                <img src="img/call-center__phone.svg" alt="Icon: phone" class="booking__call-icon">
+                <img
+                  src="img/call-center__phone.svg"
+                  alt="Icon: phone"
+                  class="booking__call-icon"
+                >
                 <span class="booking__call-description">12100</span>
               </a>
             </div>
@@ -288,7 +326,8 @@
           <!-- <div class="pack__image-offer">
             <img 
               src="img/packages-1.jpg"
-              alt="Hotel Blue Haven" class="pack__image detailed-pack__image"
+              alt="Hotel Blue Haven"
+              class="pack__image detailed-pack__image"
             >
             <span class="offer pack__offer detailed-pack__offer">Flash Offer</span>
           </div> -->
@@ -428,7 +467,11 @@
         <!-- <div class="pack"> -->
           <!-- Картинка и offer -->
           <!-- <div class="pack__image-offer">
-            <img src="img/packages-3.jpg" alt="White Palace" class="pack__image">
+            <img
+              src="img/packages-3.jpg"
+              alt="White Palace"
+              class="pack__image"
+            >
             <span class="offer pack__offer">Flash Offer</span>
           </div> -->
           <!-- Информация об отеле -->
@@ -440,17 +483,29 @@
             <!-- О номере -->
             <!-- <div class="pack__room">
               <div class="pack__text">
-                <img src="img/map-pin.svg" alt="Icon: map" class="pack__icon">
+                <img
+                  src="img/map-pin.svg"
+                  alt="Icon: map"
+                  class="pack__icon"
+                >
                 <span class="pack__description">1749 Wheeler Ridge Delaware</span>
               </div>
         
               <div class="pack__text">
-                <img src="img/person-room__guests.svg" alt="Icon: guests" class="pack__icon">
+                <img
+                  src="img/person-room__guests.svg"
+                  alt="Icon: guests"
+                  class="pack__icon"
+                >
                 <span class="pack__description">2 x Guests</span>
               </div>
         
               <div class="pack__text">
-                <img src="img/person-room__room.svg" alt="Icon: room" class="pack__icon">
+                <img
+                  src="img/person-room__room.svg"
+                  alt="Icon: room"
+                  class="pack__icon"
+                >
                 <span class="pack__description">1 x Room</span>
               </div>
             </div> -->
@@ -488,17 +543,29 @@
             <!-- О номере -->
             <!-- <div class="pack__room">
               <div class="pack__text">
-                <img src="img/map-pin.svg" alt="Icon: map" class="pack__icon">
+                <img
+                  src="img/map-pin.svg"
+                  alt="Icon: map"
+                  class="pack__icon"
+                >
                 <span class="pack__description">1749 Wheeler Ridge Delaware</span>
               </div>
         
               <div class="pack__text">
-                <img src="img/person-room__guests.svg" alt="Icon: guests" class="pack__icon">
+                <img
+                  src="img/person-room__guests.svg"
+                  alt="Icon: guests"
+                  class="pack__icon"
+                >
                 <span class="pack__description">2 x Guests</span>
               </div>
         
               <div class="pack__text">
-                <img src="img/person-room__room.svg" alt="Icon: room" class="pack__icon">
+                <img
+                  src="img/person-room__room.svg"
+                  alt="Icon: room"
+                  class="pack__icon"
+                >
                 <span class="pack__description">1 x Room</span>
               </div>
             </div> -->
@@ -536,17 +603,29 @@
             <!-- О номере -->
             <!-- <div class="pack__room">
               <div class="pack__text">
-                <img src="img/map-pin.svg" alt="Icon: map" class="pack__icon">
+                <img
+                  src="img/map-pin.svg"
+                  alt="Icon: map"
+                  class="pack__icon"
+                >
                 <span class="pack__description">1749 Wheeler Ridge Delaware</span>
               </div>
         
               <div class="pack__text">
-                <img src="img/person-room__guests.svg" alt="Icon: guests" class="pack__icon">
+                <img
+                  src="img/person-room__guests.svg"
+                  alt="Icon: guests"
+                  class="pack__icon"
+                >
                 <span class="pack__description">2 x Guests</span>
               </div>
         
               <div class="pack__text">
-                <img src="img/person-room__room.svg" alt="Icon: room" class="pack__icon">
+                <img
+                  src="img/person-room__room.svg"
+                  alt="Icon: room"
+                  class="pack__icon"
+                >
                 <span class="pack__description">1 x Room</span>
               </div>
             </div> -->
@@ -638,7 +717,11 @@
           <div class="swiper-slide">
             <div class="reviews-slider__item">
               <div class="reviews-slider__profile">
-                <img src="img/reviews__avatar-2.jpeg" alt="Avatar: John Depp" class="reviews-slider__avatar">
+                <img 
+                  src="img/reviews__avatar-2.jpeg"
+                  alt="Avatar: John Depp"
+                  class="reviews-slider__avatar"
+                >
                 <h3 class="reviews-slider__username">John Depp</h3>
                 <span class="reviews-slider__date">Stayed 8 Nov, 2019</span>
                 <div class="reviews-slider__rating">
@@ -662,7 +745,11 @@
           <div class="swiper-slide">
             <div class="reviews-slider__item">
               <div class="reviews-slider__profile">
-                <img src="img/reviews__avatar-3.jpeg" alt="Avatar: Kristen Stewart" class="reviews-slider__avatar">
+                <img
+                  src="img/reviews__avatar-3.jpeg"
+                  alt="Avatar: Kristen Stewart"
+                  class="reviews-slider__avatar"
+                >
                 <h3 class="reviews-slider__username">Kristen Stewart</h3>
                 <span class="reviews-slider__date">Stayed 29 Oct, 2019</span>
                 <div class="reviews-slider__rating">
@@ -702,25 +789,41 @@
 
       <div class="activities-wrapper">
         <div class="card card-1 activities__card">
-          <img src="img/activities-1.jpg" alt="The curious corner of chamarel" class="card__image">
+          <img
+            src="img/activities-1.jpg"
+            alt="The curious corner of chamarel"
+            class="card__image"
+          >
           <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
           <button class="card__button">Book Now</button>
         </div>
 
         <div class="card card-2 activities__card">
-          <img src="img/activities-2.jpg" alt="Gymkhana club golf course" class="card__image">
+          <img
+            src="img/activities-2.jpg"
+            alt="Gymkhana club golf course"
+            class="card__image"
+          >
           <h3 class="card__title">Gymkhana club golf course</h3>
           <button class="card__button">Book Now</button>
         </div>
 
         <div class="card card-3 activities__card">
-          <img src="img/activities-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
+          <img
+            src="img/activities-3.jpg"
+            alt="Tamarind falls hiking trip - full day"
+            class="card__image"
+          >
           <h3 class="card__title">Tamarind falls hiking trip&nbsp;-&nbsp;full day</h3>
           <button class="card__button">Book Now</button>
         </div>
 
         <div class="card card-4 activities__card">
-          <img src="img/activities-4.jpg" alt="The blue marine discovery quest" class="card__image">
+          <img
+            src="img/activities-4.jpg"
+            alt="The blue marine discovery quest"
+            class="card__image"
+          >
           <h3 class="card__title">The blue marine discovery quest</h3>
           <button class="card__button">Book Now</button>
         </div>
