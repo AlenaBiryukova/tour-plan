@@ -440,7 +440,7 @@ img {
 }
 
 .search__input {
-  width: 352px;
+  width: 351px;
   height: 100%;
   padding-left: 24px;
   padding-right: 75px;
@@ -513,7 +513,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 18px 0;
+  padding: 17px 0;
   margin: 0;
   list-style: none;
 }
@@ -526,7 +526,7 @@ img {
 
 .breadcrumb-list__item:not(:last-child)::after {
   content: '/';
-  margin-right: 4px;
+  margin-right: 3px;
 }
 
 .breadcrumb-list__link {
@@ -602,7 +602,7 @@ img {
 }
 
 .hotel-slider {
-  width: 728px;
+  width: 730px;
   height: 450px;
   position: relative;
   border-radius: 8px;
@@ -673,7 +673,7 @@ img {
 }
 
 .offer {
-  padding: 4px 9px;
+  padding: 4px 10px;
   border-radius: 3px;
   background-color: #ec1f46;
   font-weight: 600;
@@ -709,8 +709,8 @@ img {
   font-family: 'Nunito', sans-serif;
   width: 350px;
   min-height: 210px;
-  margin-bottom: 27px;
-  padding: 26px;
+  margin-bottom: 25px;
+  padding: 28px;
   border-radius: 8px;
   background-color: #0A223D;
   color: #FFFFFF;
@@ -794,7 +794,7 @@ img {
 .booking__call-text {
   font-weight: 600;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 27px;
 }
 
 .booking__call-number {
@@ -1386,7 +1386,7 @@ img {
 }
 
 .footer__logo {
-  width: 155px;
+  width: 153px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1399,6 +1399,7 @@ img {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   grid-row: 1 / 4;
+  margin-left: 3px;
 }
 
 .footer__social-network {
@@ -1411,6 +1412,7 @@ img {
   -ms-grid-row-span: 2;
   grid-row: 2 / 4;
   grid-column: span 2;
+  margin-left: 5px;
 }
 
 .footer__social-links {
@@ -1446,10 +1448,11 @@ img {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-left: 6px;
 }
 
 .footer__title {
-  margin: 0 0 16px 0;
+  margin: 0 0 19px 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
@@ -1461,7 +1464,8 @@ img {
 }
 
 .footer__title--mb-3 {
-  margin-bottom: 30px;
+  margin-bottom: 33px;
+  margin-left: 5px;
 }
 
 .footer__title-contact {
@@ -1469,9 +1473,14 @@ img {
   margin-bottom: 10px;
 }
 
+.footer__additional {
+  margin-left: 5px;
+}
+
 .footer__legal {
   -ms-grid-column-align: end;
       justify-self: end;
+  margin-right: 5px;
 }
 
 .footer__ul {
@@ -1489,12 +1498,13 @@ img {
           align-items: flex-start;
   font-weight: 400;
   font-size: 14px;
-  line-height: 160%;
+  line-height: 159%;
   color: #BDBDBD;
 }
 
 .footer__icon-wrapper {
-  min-width: 40px;
+  min-width: 42px;
+  padding: 4px;
 }
 
 .footer__link {
@@ -1512,7 +1522,7 @@ img {
   font-size: 14px;
   line-height: 160%;
   color: #BDBDBD;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .footer__input {
@@ -1524,7 +1534,7 @@ img {
   border: none;
   border-radius: 4px;
   padding: 0 23px;
-  height: 55px;
+  height: 50px;
   -ms-flex-preferred-size: 47%;
       flex-basis: 47%;
   margin-bottom: 15px;
@@ -1581,7 +1591,7 @@ img {
 }
 
 .footer__button {
-  min-width: 160px;
+  min-width: 159px;
   min-height: 50px;
   padding: 18px;
   border-radius: 4px;
@@ -1685,7 +1695,7 @@ img {
     color: #333333;
   }
   .hotel {
-    padding-bottom: 53px;
+    padding-bottom: 56px;
   }
   .hotel-grid {
     -webkit-box-orient: vertical;
@@ -1708,9 +1718,19 @@ img {
     width: 340px;
     margin-right: 20px;
     margin-bottom: 0;
+    padding: 28px 22px;
   }
   .map {
     width: 340px;
+  }
+  .newsletter {
+    padding-bottom: 93px;
+  }
+  .newsletter-title {
+    line-height: 25px;
+  }
+  .subscribe {
+    width: 350px;
   }
   .packages__title {
     margin-bottom: 50px;
@@ -1722,6 +1742,9 @@ img {
         grid-template-columns: repeat(2, minmax(-webkit-min-content, 350px));
         grid-template-columns: repeat(2, minmax(min-content, 350px));
   }
+  .reviews {
+    padding: 37px 0 76px 0;
+  }
   .reviews__title {
     margin-bottom: 50px;
     font-size: 30px;
@@ -1729,12 +1752,15 @@ img {
   }
   .reviews-slider__item {
     max-width: 580px;
-    padding: 0 60px 30px;
+    padding: 0px 60px 28px 65px;
+  }
+  .reviews-slider__text {
+    line-height: 156%;
   }
   .reviews-slider__button {
-    top: 42%;
-    -webkit-transform: translateY(-42%);
-            transform: translateY(-42%);
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
   .reviews-slider__button--next {
     right: 0px;
@@ -1772,7 +1798,7 @@ img {
     height: 53px;
   }
   .footer__logo {
-    width: 95px;
+    width: 96px;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
@@ -1786,18 +1812,19 @@ img {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    margin-left: 15px;
-    margin-top: 15px;
+    margin-left: 13px;
+    margin-top: 12px;
   }
   .footer__category {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2 / 3;
     grid-column: span 1;
+    margin-left: 2px;
   }
   .footer__additional {
     grid-column: span 4;
-    margin-left: 30px;
+    margin-left: 27px;
   }
   .footer__legal {
     grid-column: span 3;
@@ -1815,15 +1842,35 @@ img {
     grid-row: 4;
     grid-column: span 6;
   }
+  .footer__title {
+    line-height: 21px;
+  }
+  .footer__title-contact {
+    line-height: 45px;
+  }
+  .footer__title--mb-3 {
+    margin-left: 0px;
+  }
   .footer__icon-wrapper {
     min-width: 47px;
     padding: 6px;
   }
+  .footer__form {
+    margin-left: 0;
+  }
   .footer__text {
     margin-bottom: 21px;
+    line-height: 158%;
   }
   .footer__link:hover {
     color: inherit;
+  }
+  .footer__message {
+    margin-bottom: 22px;
+  }
+  .footer__button {
+    min-width: 160px;
+    padding: 17px;
   }
   .img-facebook:hover {
     background-image: url("../img/facebook.svg");
@@ -1832,7 +1879,7 @@ img {
     background-image: url("../img/youtube.svg");
   }
   .img-instagram:hover {
-    ackground-image: url("../img/instagram.svg");
+    background-image: url("../img/instagram.svg");
   }
 }
 
@@ -1843,7 +1890,7 @@ img {
     width: 92%;
   }
   body {
-    padding-top: 78px;
+    padding-top: 70px;
   }
   .navbar--mobile-fixed {
     position: fixed;
@@ -1875,11 +1922,12 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
-    top: 72px;
+    top: 70px;
     padding-top: 10px;
   }
   .navbar-button--visible {
     display: block;
+    overflow: scroll;
   }
   .navbar-menu {
     -webkit-box-orient: vertical;
@@ -1931,7 +1979,7 @@ img {
   .user__name {
     margin-left: 0px;
     color: #FFFFFF;
-    margin-bottom: 9px;
+    margin-bottom: 11px;
   }
   .user__avatar {
     margin-left: 0px;
@@ -1970,8 +2018,7 @@ img {
     height: 100%;
   }
   .hotel-slider__button {
-    width: 27px;
-    height: 27px;
+    background-size: 28%;
   }
   .hotel-booking-map {
     -webkit-box-orient: vertical;
@@ -2132,8 +2179,8 @@ img {
     padding-top: 25px;
     padding-bottom: 28px;
   }
-  .logo {
-    width: 99px;
+  .breadcrumb-list {
+    padding: 19px 0;
   }
   .hotel {
     padding-top: 3px;
@@ -2143,17 +2190,17 @@ img {
     margin-bottom: 38px;
   }
   .hotel-slider {
-    height: 173px;
+    height: 180px;
+    margin-bottom: 20px;
   }
   .hotel-slider__button {
-    width: 12px;
-    height: 12px;
+    background-size: 16%;
   }
   .hotel-slider__button--next {
-    right: 11px;
+    right: 0px;
   }
   .hotel-slider__button--prev {
-    left: 11px;
+    left: 0px;
   }
   .hotel .map {
     height: 165px;
@@ -2180,6 +2227,15 @@ img {
   }
   .subscribe__input {
     padding-left: 20px;
+  }
+  .reviews {
+    padding: 41px 0 66px 0;
+  }
+  .reviews-slider__item {
+    padding: 0px 30px 37px 31px;
+  }
+  .reviews-slider__text {
+    line-height: 158%;
   }
   .activities {
     padding-top: 22px;
@@ -2255,7 +2311,7 @@ img {
   .footer-wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    grid-row-gap: 40px;
+    grid-row-gap: 37px;
   }
   .footer__logo {
     -ms-grid-row: 1;
@@ -2311,21 +2367,24 @@ img {
     margin-top: 22px;
   }
   .footer__title {
-    line-height: 14px;
+    line-height: 13px;
   }
   .footer__title--inline {
-    margin: 0 0 24px 0px;
+    margin: 7px 0 22px 0px;
   }
   .footer__title-contact {
-    line-height: 23px;
-    margin-bottom: 23px;
+    line-height: 34px;
+    margin-bottom: 18px;
   }
   .footer__title--mb-3 {
     margin-bottom: 18px;
   }
+  .footer__title-legal {
+    line-height: 11px;
+  }
   .footer__icon-wrapper {
-    min-width: 32px;
-    padding: 2px;
+    min-width: 31px;
+    padding: 3px;
   }
   .footer__input {
     -ms-flex-preferred-size: 100%;
@@ -2350,6 +2409,10 @@ img {
   }
   .footer__text {
     line-height: 158%;
+  }
+  .img-facebook {
+    width: 25px;
+    height: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

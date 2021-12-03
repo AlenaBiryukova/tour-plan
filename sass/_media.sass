@@ -37,7 +37,7 @@
         color: $text-color
   // об отеле
   .hotel
-    padding-bottom: 53px
+    padding-bottom: 56px
     &-grid
       flex-direction: column
     &-slider
@@ -50,8 +50,16 @@
     width: 340px
     margin-right: 20px
     margin-bottom: 0
+    padding: 28px 22px
   .map
     width: 340px
+  // подписка
+  .newsletter
+    padding-bottom: 93px
+    &-title
+      line-height: 25px
+  .subscribe
+    width: 350px
   // другие предложения
   .packages
     &__title
@@ -60,7 +68,10 @@
       line-height: 43px
     &-wrapper
       grid-template-columns: repeat(2,minmax(min-content, 350px))
+
+  // отзывы
   .reviews
+    padding: 37px 0 76px 0
     &__title
       margin-bottom: 50px
       font-size: 30px
@@ -68,10 +79,12 @@
     &-slider
       &__item
         max-width: 580px
-        padding: 0 60px 30px
+        padding: 0px 60px 28px 65px
+      &__text
+        line-height: 156%
       &__button
-        top: 42%
-        transform: translateY(-42%)
+        top: 50%
+        transform: translateY(-50%)
         &--next
           right: 0px
         &--prev
@@ -98,7 +111,7 @@
     &__input
       height: 53px
     &__logo
-      width: 95px
+      width: 96px
       grid-row: 1 / 2
       grid-column: span 1
     &__social
@@ -106,14 +119,15 @@
         grid-row: 1 / 2
         grid-column: span 4
         align-self: center
-        margin-left: 15px
-        margin-top: 15px
+        margin-left: 13px
+        margin-top: 12px
     &__category
       grid-row: 2 / 3
       grid-column: span 1
+      margin-left: 2px
     &__additional
       grid-column: span 4
-      margin-left: 30px
+      margin-left: 27px
     &__legal
       grid-column: span 3
       margin-left: 14px
@@ -125,15 +139,29 @@
       &-form
         grid-row: 4
         grid-column: span 6
+    &__title
+      line-height: 21px
+      &-contact
+        line-height: 45px
+      &--mb-3
+        margin-left: 0px
     &__icon
       &-wrapper
         min-width: 47px
         padding: 6px
+    &__form
+      margin-left: 0
     &__text
       margin-bottom: 21px
+      line-height: 158%
     &__link
       &:hover
         color: inherit
+    &__message
+      margin-bottom: 22px
+    &__button
+      min-width: 160px
+      padding: 17px
   // Подумать еще над этим!!!
   .img
     &-facebook
@@ -144,7 +172,7 @@
         background-image: url("../img/youtube.svg")
     &-instagram
       &:hover
-        ackground-image: url("../img/instagram.svg")
+        background-image: url("../img/instagram.svg")
 
 @media (max-width: 767px)
   .container,
@@ -152,7 +180,7 @@
     max-width: 576px
     width: 92%
   body
-    padding-top: 78px
+    padding-top: 70px
   // шапка
   .navbar
     &--mobile
@@ -177,10 +205,11 @@
       left: 0
       right: 0
       bottom: 0
-      top: 72px
+      top: 70px
       padding-top: 10px
       &--visible
         display: block
+        overflow: scroll
     &-menu
       flex-direction: column
       &__item
@@ -214,7 +243,7 @@
     &__name
       margin-left: 0px
       color: $light
-      margin-bottom: 9px
+      margin-bottom: 11px
     &__avatar
       margin-left: 0px
       margin-bottom: 10px
@@ -242,8 +271,7 @@
         height: 100%
     &-slider
       &__button
-        width: 27px
-        height: 27px
+        background-size: 28%
     &-booking-map
       flex-direction: column
     .booking
@@ -358,8 +386,9 @@
     &-top
       padding-top: 25px
       padding-bottom: 28px
-  .logo
-    width: 99px
+  .breadcrumb
+    &-list
+      padding: 19px 0
   // об отеле
   .hotel
     padding-top: 3px
@@ -367,14 +396,14 @@
     &-info
       margin-bottom: 38px
     &-slider
-      height: 173px
+      height: 180px
+      margin-bottom: 20px
       &__button
-        width: 12px
-        height: 12px
+        background-size: 16%
         &--next
-          right: 11px
+          right: 0px
         &--prev
-          left: 11px
+          left: 0px
     .map
       height: 165px
   // рассылка
@@ -394,6 +423,14 @@
     width: 95%
     &__input
       padding-left: 20px
+  // отзывы
+  .reviews
+    padding: 41px 0 66px 0
+    &-slider
+      &__item
+        padding: 0px 30px 37px 31px
+      &__text
+        line-height: 158%
   // о досуге
   .activities
     padding-top: 22px
@@ -447,7 +484,7 @@
     padding-top: 67px
     &-wrapper
       grid-template-columns: 1fr
-      grid-row-gap: 40px
+      grid-row-gap: 37px
     &__logo
       grid-row: 1
       grid-column: 1
@@ -478,18 +515,20 @@
         grid-column: 1
         margin-top: 22px
     &__title
-      line-height: 14px
+      line-height: 13px
       &--inline
-        margin: 0 0 24px 0px
+        margin: 7px 0 22px 0px
       &-contact
-        line-height: 23px
-        margin-bottom: 23px
+        line-height: 34px
+        margin-bottom: 18px
       &--mb-3
         margin-bottom: 18px
+      &-legal
+        line-height: 11px
     &__icon
       &-wrapper
-        min-width: 32px
-        padding: 2px
+        min-width: 31px
+        padding: 3px
     &__input
       flex-basis: 100%
       height: 52px
@@ -503,3 +542,7 @@
       order: 2
     &__text
       line-height: 158%
+  .img
+    &-facebook
+      width: 25px
+      height: 30px
