@@ -1,0 +1,26 @@
+.modal
+  &__overlay
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    background-color: rgba(0, 143, 223, 0.39)
+    z-index: 100
+  &__dialog
+    position: fixed
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    z-index: 105
+    max-width: 487px
+    padding: 33px 80px
+    border-radius: 8px
+    background-color: $dark
+    color: $light
+  &__close
+    position: absolute
+    right: 18px
+    top: 17px
+    text-decoration: none
+    cursor: pointer
