@@ -1676,7 +1676,6 @@ img {
 .modal__overlay--visible {
   visibility: visible;
   opacity: 1;
-  overflow-y: scroll;
 }
 
 .modal__dialog {
@@ -1696,13 +1695,11 @@ img {
   opacity: 0;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
-  overflow: scroll;
 }
 
 .modal__dialog--visible {
   visibility: visible;
   opacity: 1;
-  overflow-y: scroll;
 }
 
 .modal__close {
