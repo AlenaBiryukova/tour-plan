@@ -1676,6 +1676,7 @@ img {
 .modal__overlay--visible {
   visibility: visible;
   opacity: 1;
+  overflow-y: scroll;
 }
 
 .modal__dialog {
@@ -1686,7 +1687,7 @@ img {
           transform: translate(-50%, -63%);
   z-index: 105;
   max-width: 480px;
-  height: 488px;
+  min-height: 488px;
   padding: 30px 88px 30px 91px;
   border-radius: 8px;
   background-color: #0A223D;
@@ -1695,11 +1696,13 @@ img {
   opacity: 0;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
+  overflow: scroll;
 }
 
 .modal__dialog--visible {
   visibility: visible;
   opacity: 1;
+  overflow-y: scroll;
 }
 
 .modal__close {
@@ -1977,6 +1980,22 @@ img {
   }
   .img-instagram:hover {
     background-image: url("../img/instagram.svg");
+  }
+  .modal__dialog {
+    padding: 30px 60px;
+  }
+  .modal__info {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 15px;
+  }
+  .modal__button {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
 
@@ -2510,6 +2529,10 @@ img {
   .img-facebook {
     width: 25px;
     height: 30px;
+  }
+  .modal__dialog {
+    max-width: 280px;
+    padding: 30px 25px;
   }
 }
 /*# sourceMappingURL=style.css.map */

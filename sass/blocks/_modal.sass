@@ -13,6 +13,7 @@
     &--visible
       visibility: visible
       opacity: 1
+      overflow-y: scroll
   &__dialog
     position: fixed
     left: 50%
@@ -20,7 +21,7 @@
     transform: translate(-50%, -63%)
     z-index: 105
     max-width: 480px
-    height: 488px
+    min-height: 488px
     padding: 30px 88px 30px 91px
     border-radius: 8px
     background-color: $dark
@@ -28,9 +29,11 @@
     visibility: hidden
     opacity: 0
     transition: opacity 0.2s
+    overflow: scroll
     &--visible
       visibility: visible
       opacity: 1
+      overflow-y: scroll
   &__close
     position: absolute
     right: 18px

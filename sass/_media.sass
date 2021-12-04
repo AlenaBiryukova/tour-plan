@@ -173,6 +173,16 @@
     &-instagram
       &:hover
         background-image: url("../img/instagram.svg")
+  // модельное окно
+  .modal
+    &__dialog
+      padding: 30px 60px
+    &__info
+      order: 1
+      flex-basis: 100%
+      margin-bottom: 15px
+    &__button
+      order: 2
 
 @media (max-width: 767px)
   .container,
@@ -546,3 +556,8 @@
     &-facebook
       width: 25px
       height: 30px
+  // модульное окно
+  .modal
+    &__dialog
+      max-width: 280px
+      padding: 30px 25px

@@ -61,4 +61,13 @@ $(document).ready(function () {
     modalDialog.removeClass('modal__dialog--visible');
   }
 
+  $(document).keyup(function (e) {
+    if (e.key === "Escape" || e.keyCode === 27) {
+      const modalOverlay = $('.modal__overlay');
+      const modalDialog = $('.modal__dialog');
+      modalOverlay.removeClass('modal__overlay--visible');
+      modalDialog.removeClass('modal__dialog--visible');
+    }
+  });
+  
 });
