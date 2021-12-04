@@ -7,20 +7,55 @@
     bottom: 0
     background-color: rgba(0, 143, 223, 0.39)
     z-index: 100
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    &--visible
+      visibility: visible
+      opacity: 1
   &__dialog
     position: fixed
     left: 50%
-    top: 50%
-    transform: translate(-50%, -50%)
+    top: 63%
+    transform: translate(-50%, -63%)
     z-index: 105
-    max-width: 487px
-    padding: 33px 80px
+    max-width: 480px
+    height: 488px
+    padding: 30px 88px 30px 91px
     border-radius: 8px
     background-color: $dark
     color: $light
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    &--visible
+      visibility: visible
+      opacity: 1
   &__close
     position: absolute
     right: 18px
     top: 17px
     text-decoration: none
     cursor: pointer
+  &__input
+    flex-basis: 100%
+    margin-bottom: 15px
+  &__message
+    flex-basis: 100%
+    margin-bottom: 14px
+  &__button
+    min-width: 159px
+    min-height: 50px
+    padding: 18px
+  &__title
+    margin: 0 0 19px 0
+    font-weight: 700
+    font-size: 18px
+    line-height: 23px
+    text-transform: uppercase
+    text-align: center
+  &__info
+    font-weight: 700
+    font-size: 12px
+    line-height: 15px
+    color: #E0E0E0
