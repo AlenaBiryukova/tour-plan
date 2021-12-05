@@ -1657,6 +1657,11 @@ img {
   margin-right: 0;
 }
 
+.footer__bottom-image {
+  width: 136px;
+  height: 22px;
+}
+
 .main-information {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1678,11 +1683,6 @@ img {
 
 .main-information__link:hover {
   color: #ec1f46;
-}
-
-.main-information__image {
-  width: 136px;
-  height: 22px;
 }
 
 .img-facebook {
