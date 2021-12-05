@@ -61,13 +61,16 @@ $(document).ready(function () {
     modalDialog.removeClass('modal__dialog--visible');
   }
 
-  $(document).keyup(function (e) {
-    if (e.key === "Escape" || e.keyCode === 27) {
-      const modalOverlay = $('.modal__overlay');
-      const modalDialog = $('.modal__dialog');
-      modalOverlay.removeClass('modal__overlay--visible');
-      modalDialog.removeClass('modal__dialog--visible');
-    }
+  //закрытие на клавишу Esc
+  $(document).on('keydown', function(evt) {
+    if (evt.code == "Escape") {
+      closeModal(evt);}
+  });
+
+  //закрытие на пустую область
+  $('.modal__overlay--close').on('click', function(e) {
+        closeModal(e);
   });
   
+
 });
