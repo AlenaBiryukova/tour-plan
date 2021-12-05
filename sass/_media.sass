@@ -35,6 +35,11 @@
     &__name
       &:hover
         color: $text-color
+  .breadcrumb
+    &-list
+      &__link
+        &:hover
+          color: inherit
   // об отеле
   .hotel
     padding-bottom: 56px
@@ -51,6 +56,9 @@
     margin-right: 20px
     margin-bottom: 0
     padding: 28px 22px
+    &__call-number
+      &:hover
+        color: inherit
   .map
     width: 340px
   // подписка
@@ -163,6 +171,12 @@
     &__button
       min-width: 160px
       padding: 17px
+    &__bottom
+      width: 100%
+  .main-information
+    &__link
+      &:hover
+        color: inherit
   // Подумать еще над этим!!!
   .img
     &-facebook
@@ -553,6 +567,10 @@
       order: 2
     &__text
       line-height: 158%
+    &__bottom
+      flex-direction: column
+      align-items: start
+      height: 47px
   .img
     &-facebook
       width: 25px

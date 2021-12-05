@@ -618,6 +618,10 @@ img {
   color: inherit;
 }
 
+.breadcrumb-list__link:hover {
+  color: #ec1f46;
+}
+
 .hotel {
   padding-top: 17px;
   padding-bottom: 70px;
@@ -899,6 +903,10 @@ img {
   text-transform: uppercase;
 }
 
+.booking__call-number:hover {
+  color: #ec1f46;
+}
+
 .booking__call-description {
   margin-left: 9px;
 }
@@ -938,7 +946,7 @@ img {
 
 .newsletter {
   position: relative;
-  padding: 97px 0 86px 0;
+  padding: 97px 0 88px 0;
 }
 
 .newsletter::before {
@@ -1130,7 +1138,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-top: -45px;
-  margin-bottom: 33px;
+  margin-bottom: 31px;
 }
 
 .reviews-slider__avatar {
@@ -1179,7 +1187,7 @@ img {
 }
 
 .activities {
-  padding: 60px 0 95px 0;
+  padding: 60px 0 97px 0;
 }
 
 .activities__title {
@@ -1267,7 +1275,7 @@ img {
 }
 
 .packages {
-  padding: 39px 0 70px 0;
+  padding: 41px 0 70px 0;
 }
 
 .packages__title {
@@ -1543,7 +1551,7 @@ img {
 }
 
 .footer__title--inline {
-  margin: 0 43px 0 0;
+  margin: 2px 43px 0 0;
 }
 
 .footer__title--mb-3 {
@@ -1581,7 +1589,7 @@ img {
           align-items: flex-start;
   font-weight: 400;
   font-size: 14px;
-  line-height: 159%;
+  line-height: 155%;
   color: #BDBDBD;
 }
 
@@ -1631,6 +1639,50 @@ img {
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
+}
+
+.footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 696px;
+  margin-top: 97px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.main-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 283px;
+}
+
+.main-information__link {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.main-information__link:hover {
+  color: #ec1f46;
+}
+
+.main-information__image {
+  width: 136px;
+  height: 22px;
 }
 
 .img-facebook {
@@ -1802,6 +1854,9 @@ img {
   .user__name:hover {
     color: #333333;
   }
+  .breadcrumb-list__link:hover {
+    color: inherit;
+  }
   .hotel {
     padding-bottom: 56px;
   }
@@ -1827,6 +1882,9 @@ img {
     margin-right: 20px;
     margin-bottom: 0;
     padding: 28px 22px;
+  }
+  .booking__call-number:hover {
+    color: inherit;
   }
   .map {
     width: 340px;
@@ -1981,6 +2039,12 @@ img {
   .footer__button {
     min-width: 160px;
     padding: 17px;
+  }
+  .footer__bottom {
+    width: 100%;
+  }
+  .main-information__link:hover {
+    color: inherit;
   }
   .img-facebook:hover {
     background-image: url("../img/facebook.svg");
@@ -2535,6 +2599,16 @@ img {
   }
   .footer__text {
     line-height: 158%;
+  }
+  .footer__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    height: 47px;
   }
   .img-facebook {
     width: 25px;

@@ -51,6 +51,7 @@ $(document).ready(function () {
     var modalDialog = $('.modal__dialog');
     modalOverlay.addClass('modal__overlay--visible');
     modalDialog.addClass('modal__dialog--visible');
+    document.querySelector("body").style.overflow = "hidden";
   }
 
   function closeModal(event) {
@@ -59,6 +60,8 @@ $(document).ready(function () {
     var modalDialog = $('.modal__dialog');
     modalOverlay.removeClass('modal__overlay--visible');
     modalDialog.removeClass('modal__dialog--visible');
+    document.querySelector("body").style.overflow = "";
+    console.log(closeModal);
   }
 
   //закрытие на клавишу Esc
