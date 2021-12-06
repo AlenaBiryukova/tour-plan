@@ -658,14 +658,15 @@
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
 
-      <form action="send.php" method="post" class="subscribe newsletter__subscribe">
+      <form action="send.php" method="post" class="form newsletter-subscribe">
         <input
-          name="youremailaddress"
-          type="text"
+          name="email"
+          type="email"
           placeholder="Your email address"
-          class="subscribe__input"
+          class="newsletter-subscribe__input"
+          required
         >
-        <button class="subscribe__button">
+        <button class="newsletter-subscribe__button">
           <span>Send</span>
         </button>
       </form>
@@ -1005,18 +1006,27 @@
           <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
 
           <form class="form footer__form" action="send.php" method="post">
-            <input 
+
+            <div class="footer__input-group">
+            <input
               name="name"
               class="input footer__input"
               type="text"
               placeholder="Your Full Name*"
+              minlength="2"
+              required
             >
-            <input
-              name="phone"
-              class="input footer__input"
-              type="text"
-              placeholder="Phone Number*"
-            >
+            </div>
+
+            <div class="footer__input-group">
+              <input
+                name="phone"
+                class="input footer__input phone-number"
+                type="tel"
+                placeholder="Phone Number*"
+                required
+              >
+            </div>
 
             <textarea
               name="message"
@@ -1077,18 +1087,22 @@
           class="input modal__input"
           type="text"
           placeholder="Your Full Name*"
+          minlength="2"
+          required
         >
         <input
           name="phone"
-          class="input modal__input"
-          type="text"
+          class="input modal__input phone-number"
+          type="tel"
           placeholder="Phone Number*"
+          required
         >
         <input
-          name="youremailaddress"
+          name="email"
           class="input modal__input"
-          type="text"
+          type="email"
           placeholder="Email*"
+          required
         >
           
         <textarea
@@ -1112,6 +1126,8 @@
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/parallax.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/main.js"></script>
 
 </body>

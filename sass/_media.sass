@@ -66,8 +66,8 @@
     padding-bottom: 93px
     &-title
       line-height: 25px
-  .subscribe
-    width: 350px
+    &-subscribe
+      width: 350px
   // другие предложения
   .packages
     &__title
@@ -117,7 +117,8 @@
       grid-template-columns: repeat(8, 1fr)
       grid-row-gap: 50px
     &__input
-      height: 53px
+      &-group
+        height: 53px
     &-logo
       grid-row: 1 / 2
       grid-column: span 1
@@ -191,11 +192,12 @@
   // модельное окно
   .modal
     &__dialog
-      padding: 30px 60px
+      max-width: 400px
+      padding: 30px 70px
     &__info
       order: 1
       flex-basis: 100%
-      margin-bottom: 15px
+      margin-top: 15px
     &__button
       order: 2
 
@@ -344,8 +346,8 @@
       &__strong
         font-size: 30px
         line-height: 38px
-  .subscribe
-    width: 100%
+    &-subscribe
+      width: 100%
   // отзывы
   .reviews
     &__title
@@ -444,10 +446,10 @@
       &__strong
         font-size: 30px
         line-height: 44px
-  .subscribe
-    width: 95%
-    &__input
-      padding-left: 20px
+    &-subscribe
+      width: 95%
+      &__input
+        padding-left: 20px
   // отзывы
   .reviews
     padding: 41px 0 66px 0
@@ -555,8 +557,9 @@
         min-width: 31px
         padding: 3px
     &__input
-      flex-basis: 100%
-      height: 52px
+      &-group
+        flex-basis: 100%
+        height: 52px
     &__message
       margin-bottom: 13px
     &__info
@@ -578,5 +581,5 @@
   // модульное окно
   .modal
     &__dialog
-      max-width: 280px
-      padding: 30px 25px
+      max-width: 282px
+      padding: 30px 35px

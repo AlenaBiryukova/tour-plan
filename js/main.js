@@ -74,6 +74,40 @@ $(document).ready(function () {
   $('.modal__overlay--close').on('click', function(e) {
         closeModal(e);
   });
-  
+
+  // карта
+  let map;
+
+  function initMap() {
+    map = new google.maps.Map(document.getElementById(".map"), {
+      center: {
+        lat: 37.589894, lng: -122.367655},
+        zoom: 15,
+    });
+  }
+
+  // обработка форм
+
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please enter your name",
+          minlength: jQuery.validator.format("At least 2 characters required!"),
+        },
+        email: {
+          required: "Please enter your email address",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        phone: {
+          required: "Please enter your phone number",
+          phone: "Your phone number must be in the format of +7(xxx)xxx-xx-xx"
+        },
+      },
+    });
+    $('.phone-number').mask('+7 (999) 999-99-99');
+  });
+
 
 });

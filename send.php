@@ -8,7 +8,7 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
-$youremailaddress = $_POST['youremailaddress'];
+$email = $_POST['email'];
 
 
 
@@ -19,7 +19,7 @@ $body = "
 <b>Имя:</b> $name<br>
 <b>Почта:</b> $phone<br><br>
 <b>Сообщение:</b><br>$message
-<b>Адресс электронной почты:</b><br>$youremailaddress
+<b>Адресс электронной почты:</b><br>$email
 
 ";
 
