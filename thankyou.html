@@ -22,75 +22,49 @@
   <header class="navbar navbar--mobile-fixed">
     <div class="container">
       <div class="navbar-top navbar-top--fixed">
-        
+  
         <a href="index.html" class="logo">
-          <img 
-            src="img/horizontal-logo.svg" 
-            alt="Logo: Best Tour Plan" 
-            class="logo__image"
-          >
+          <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
-
+  
         <form action="#" class="search navbar__search navbar__search--mobile--hidden">
-          <input 
-            type="text"
-            placeholder="Search Location"
-            class="search__input"
-          >
+          <input type="text" placeholder="Search Location" class="search__input">
           <button class="search__button">
-            <img 
-              src="img/search.svg"
-              alt="Icon: search"
-            >
+            <img src="img/search.svg" alt="Icon: search">
           </button>
         </form>
-
+  
         <a href="#" class="user navbar__user navbar__user--mobile--hidden">
-          <img 
-            src="img/user-avatar.jpg"
-            alt="Avatar: Nathan"
-            class="user__avatar"
-          >
+          <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
           <span class="user__name">Nathan</span>
         </a>
-
+  
         <button class="menu-button navbar-top__menu-button">
           <span class="menu-button__line"></span>
           <span class="menu-button__line"></span>
           <span class="menu-button__line"></span>
         </button>
-      
+  
       </div>
       <!-- /.navbar-top -->
     </div>
     <!-- /.container -->
-
+  
     <div class="navbar-button">
       <div class="container">
-
+  
         <ul class="navbar-menu">
           <li class="navbar-menu__item navbar-menu__item--mobile--visible">
             <a href="#" class="user navbar__user navbar__user--mobile--visible">
-              <img
-                src="img/user-avatar.jpg"
-                alt="Avatar: Nathan"
-                class="user__avatar"
-              >
+              <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
               <span class="user__name">Nathan</span>
             </a>
           </li>
           <li class="navbar-menu__item navbar-menu__item--mobile--visible">
             <form action="#" class="search navbar__search navbar__search--mobile--visible">
-              <input 
-                type="text"
-                placeholder="Search Location"
-                class="search__input"
-              >
+              <input type="text" placeholder="Search Location" class="search__input">
               <button class="search__button">
-                <img 
-                  src="img/search.svg"
-                  alt="Icon: search"
-                >
+                <img src="img/search.svg" alt="Icon: search">
               </button>
             </form>
           </li>
@@ -106,7 +80,7 @@
           <li class="navbar-menu__item">
             <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
           </li>
-           <li class="navbar-menu__item">
+          <li class="navbar-menu__item">
             <a href="#" class="navbar-menu__link">Restaurants</a>
           </li>
           <li class="navbar-menu__item">
@@ -116,17 +90,17 @@
             <a href="#" class="navbar-menu__link">Rodrigues</a>
           </li>
         </ul>
-
+  
       </div>
       <!-- /.container -->
     </div>
     <!-- /.navbar-button -->
   </header>
   <!-- /.navbar -->
-
+  
   <nav class="breadcrumb">
     <div class="container">
-
+  
       <ul class="breadcrumb-list">
         <li class="breadcrumb-list__item">
           <a href="#" class="breadcrumb-list__link">Home</a>
@@ -138,7 +112,7 @@
           Grand Hilton Hotel
         </li>
       </ul>
-
+  
     </div>
     <!-- /.container -->
   </nav>
@@ -242,15 +216,25 @@
           <h3 class="footer__title footer__title--inline">Social&nbsp;Network</h3>
   
           <div class="footer__social-links">
-            <a href="https://www.facebook.com" target="_blank" class="footer__link img-facebook">
-              <!-- <img class="footer__icon-facebook" src="img/facebook.svg" alt="Icon: Facebook"> -->
+  
+            <a href="https://www.facebook.com/" target="_blank" class="footer__link">
+              <svg class="footer__img">
+                <use xlink:href="img/social.svg#facebook"></use>
+              </svg>
             </a>
-            <a href="https://www.youtube.com" target="_blank" class="footer__link img-youtube">
-              <!-- <img class="footer__icon-youtube" src="img/youtube.svg" alt="Icon: YouTube"> -->
+  
+            <a href="https://www.youtube.com/" target="_blank" class="footer__link">
+              <svg class="footer__img">
+                <use xlink:href="img/social.svg#youtube"></use>
+              </svg>
             </a>
-            <a href="https://www.instagram.com" target="_blank" class="footer__link img-instagram">
-              <!-- <img class="footer__icon-instagram" src="img/instagram.svg" alt="Icon: Instagram"> -->
+  
+            <a href="https://www.instagram.com/" target="_blank" class="footer__link">
+              <svg class="footer__img">
+                <use xlink:href="img/social.svg#instagram"></use>
+              </svg>
             </a>
+  
           </div>
           <!-- /.footer__social-links -->
   
@@ -323,21 +307,25 @@
   
           <form class="form footer__form" action="send.php" method="post">
   
-            <div class="footer__input-group">
-              <input name="name" class="input footer__input" type="text" placeholder="Your Full Name*" minlength="2"
-                required>
-            </div>
+            <div class="footer__input-wrapper">
+              <div class="footer__input-group">
+                <input name="name" class="input footer__input" type="text" placeholder="Your Full Name*" minlength="2"
+                  required>
+              </div>
   
-            <div class="footer__input-group">
-              <input name="phone" class="input footer__input phone-number" type="tel" placeholder="Phone Number*"
-                required>
+              <div class="footer__input-group">
+                <input name="phone" class="input footer__input phone-number" type="tel" placeholder="Phone Number*"
+                  minlength="18" required>
+              </div>
             </div>
+            <!-- /.footer__input-wrapper -->
   
             <textarea name="message" class="message footer__message" cols="30" rows="10" placeholder="Message"></textarea>
   
             <button class="button footer__button" type="submit">Send</button>
   
             <span class="footer__info">* Required Fields</span>
+  
           </form>
   
         </div>
@@ -367,6 +355,7 @@
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
   <script src="js/main.js"></script>
 
 </body>

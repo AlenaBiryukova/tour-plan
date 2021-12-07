@@ -32,6 +32,7 @@ img
   line-height: 15px
   &::placeholder
     color: $text-subscribe
+    opacity: 1
 
 .message
   height: 123px
@@ -47,6 +48,7 @@ img
   color: $text-color
   &::placeholder
     color: $text-subscribe
+    opacity: 1
 
 .button
   border-radius: 4px
@@ -58,9 +60,23 @@ img
   line-height: 15px
   cursor: pointer
 
+.ui-tooltip
+  padding: 10px
+  color: $primary
+  border-radius: 20px
+  font-weight: 700
+  font-size: 12px
+  line-height: 15px
+  text-transform: uppercase
+  box-shadow: 0 0 7px $primary
+  max-width: 300px
+  text-align: center
+  overflow: hidden
+  position: absolute
+
 .invalid
   color: $primary
-  border-bottom: 1px solid $primary
   font-weight: 400
   font-size: 12px
   line-height: 15px
+  box-shadow: 0 0 10px $primary

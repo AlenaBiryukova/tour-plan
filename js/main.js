@@ -75,16 +75,6 @@ $(document).ready(function () {
         closeModal(e);
   });
 
-  // карта
-  let map;
-
-  function initMap() {
-    map = new google.maps.Map(document.getElementById(".map"), {
-      center: {
-        lat: 37.589894, lng: -122.367655},
-        zoom: 15,
-    });
-  }
 
   // обработка форм
 
@@ -102,12 +92,40 @@ $(document).ready(function () {
         },
         phone: {
           required: "Please enter your phone number",
-          phone: "Your phone number must be in the format of +7(xxx)xxx-xx-xx"
+          // phone: "Your phone number must be in the format of +7 (999) 999-99-99",
+          minlength: jQuery.validator.format("At least 18 characters required!"),
         },
       },
     });
     $('.phone-number').mask('+7 (999) 999-99-99');
+    
   });
+
+  // $(".newsletter-form").validate({
+  //   errorClass: "invalid-newsletter",
+  //   messages: {
+  //     emailSubscribe: {
+  //       required: "We need your email address to contact you",
+  //       email: "Format for email address - name@domain.com"
+  //     }
+  //   }
+  // });
+
+
+  $( function() {
+    var tooltips = $( "[title]" ).tooltip({
+      position: {
+        my: "left top",
+        at: "left+5 top+60",
+        collision: "none"
+      }
+    });
+    $(".newsletter-subscribe__button")
+      .on("click", function () {
+        tooltips.tooltip("open");
+      });
+  });
+  
 
 
 });

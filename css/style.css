@@ -390,18 +390,22 @@ img {
 
 .input::-webkit-input-placeholder {
   color: #BDBDBD;
+  opacity: 1;
 }
 
 .input:-ms-input-placeholder {
   color: #BDBDBD;
+  opacity: 1;
 }
 
 .input::-ms-input-placeholder {
   color: #BDBDBD;
+  opacity: 1;
 }
 
 .input::placeholder {
   color: #BDBDBD;
+  opacity: 1;
 }
 
 .message {
@@ -420,18 +424,22 @@ img {
 
 .message::-webkit-input-placeholder {
   color: #BDBDBD;
+  opacity: 1;
 }
 
 .message:-ms-input-placeholder {
   color: #BDBDBD;
+  opacity: 1;
 }
 
 .message::-ms-input-placeholder {
   color: #BDBDBD;
+  opacity: 1;
 }
 
 .message::placeholder {
   color: #BDBDBD;
+  opacity: 1;
 }
 
 .button {
@@ -445,12 +453,29 @@ img {
   cursor: pointer;
 }
 
+.ui-tooltip {
+  padding: 10px;
+  color: #ec1f46;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 0 7px #ec1f46;
+          box-shadow: 0 0 7px #ec1f46;
+  max-width: 300px;
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+}
+
 .invalid {
   color: #ec1f46;
-  border-bottom: 1px solid #ec1f46;
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
+  -webkit-box-shadow: 0 0 10px #ec1f46;
+          box-shadow: 0 0 10px #ec1f46;
 }
 
 .navbar {
@@ -546,19 +571,23 @@ img {
 }
 
 .search__input::-webkit-input-placeholder {
-  color: #333333;
+  color: #BDBDBD;
+  opacity: 1;
 }
 
 .search__input:-ms-input-placeholder {
-  color: #333333;
+  color: #BDBDBD;
+  opacity: 1;
 }
 
 .search__input::-ms-input-placeholder {
-  color: #333333;
+  color: #BDBDBD;
+  opacity: 1;
 }
 
 .search__input::placeholder {
-  color: #333333;
+  color: #BDBDBD;
+  opacity: 1;
 }
 
 .search__button {
@@ -954,6 +983,7 @@ img {
 
 .newsletter {
   position: relative;
+  overflow: hidden;
   padding: 97px 0 88px 0;
 }
 
@@ -970,7 +1000,7 @@ img {
 }
 
 .newsletter-wrapper {
-  position: relative;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -981,10 +1011,11 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 731px;
-  margin: auto;
 }
 
 .newsletter-title {
+  max-width: 250px;
+  z-index: 5;
   margin: 0;
   color: #FFFFFF;
   font-weight: 300;
@@ -993,7 +1024,6 @@ img {
 }
 
 .newsletter-title__strong {
-  display: block;
   font-weight: 600;
   font-size: 36px;
   line-height: 45px;
@@ -1002,6 +1032,10 @@ img {
 
 .newsletter-subscribe {
   position: relative;
+  margin-top: 2px;
+  margin-right: auto;
+  margin-left: 131px;
+  margin-bottom: 0;
   width: 351px;
   height: 55px;
   border-radius: 4px;
@@ -1009,10 +1043,8 @@ img {
 }
 
 .newsletter-subscribe__input {
-  position: absolute;
-  width: 100%;
-  height: 100%;
   border: none;
+  width: 350px;
   padding-left: 33px;
   padding-right: 75px;
   font-weight: 300;
@@ -1020,6 +1052,9 @@ img {
   line-height: 18px;
   color: #333333;
   outline: none;
+  height: 55px;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .newsletter-subscribe__input::-webkit-input-placeholder {
@@ -1043,14 +1078,16 @@ img {
   right: 0;
   top: 0;
   min-width: 65px;
-  height: 100%;
+  height: 55px;
   border: none;
+  border-radius: 0 4px 4px 0;
   background-color: #ec1f46;
   color: #FFFFFF;
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .reviews {
@@ -1629,9 +1666,19 @@ img {
 }
 
 .footer__input-group {
+  margin-bottom: 15px;
   -ms-flex-preferred-size: 47%;
       flex-basis: 47%;
-  margin-bottom: 15px;
+}
+
+.footer__input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
 }
 
 .footer__message {
@@ -1674,6 +1721,16 @@ img {
   height: 22px;
 }
 
+.footer__img {
+  fill: #BDBDBD;
+  width: 21px;
+  height: 21px;
+}
+
+.footer__img:hover {
+  fill: #ec1f46;
+}
+
 .main-information {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1695,42 +1752,6 @@ img {
 
 .main-information__link:hover {
   color: #ec1f46;
-}
-
-.img-facebook {
-  background-image: url("../img/facebook.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 21px;
-  height: 21px;
-}
-
-.img-facebook:hover {
-  background-image: url("../img/facebook_activ.svg");
-}
-
-.img-youtube {
-  background-image: url("../img/youtube.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 21px;
-  height: 21px;
-}
-
-.img-youtube:hover {
-  background-image: url("../img/youtube_activ.svg");
-}
-
-.img-instagram {
-  background-image: url("../img/instagram.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 21px;
-  height: 21px;
-}
-
-.img-instagram:hover {
-  background-image: url("../img/instagram_activ.svg");
 }
 
 .modal__overlay {
@@ -2065,15 +2086,6 @@ img {
   .main-information__link:hover {
     color: inherit;
   }
-  .img-facebook:hover {
-    background-image: url("../img/facebook.svg");
-  }
-  .img-youtube:hover {
-    background-image: url("../img/youtube.svg");
-  }
-  .img-instagram:hover {
-    background-image: url("../img/instagram.svg");
-  }
   .modal__dialog {
     max-width: 400px;
     padding: 30px 70px;
@@ -2298,9 +2310,6 @@ img {
     font-size: 30px;
     line-height: 38px;
   }
-  .newsletter-subscribe {
-    width: 100%;
-  }
   .reviews__title {
     font-size: 20px;
     line-height: 23px;
@@ -2433,7 +2442,8 @@ img {
     line-height: 44px;
   }
   .newsletter-subscribe {
-    width: 95%;
+    width: 280px;
+    margin-left: auto;
   }
   .newsletter-subscribe__input {
     padding-left: 20px;
@@ -2601,6 +2611,12 @@ img {
         flex-basis: 100%;
     height: 52px;
   }
+  .footer__input-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .footer__message {
     margin-bottom: 13px;
   }
@@ -2629,10 +2645,6 @@ img {
         -ms-flex-align: start;
             align-items: start;
     height: 47px;
-  }
-  .img-facebook {
-    width: 25px;
-    height: 30px;
   }
   .modal__dialog {
     max-width: 282px;

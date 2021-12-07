@@ -178,17 +178,6 @@
     &__link
       &:hover
         color: inherit
-  // Подумать еще над этим!!!
-  .img
-    &-facebook
-      &:hover
-        background-image: url("../img/facebook.svg")
-    &-youtube
-      &:hover
-        background-image: url("../img/youtube.svg")
-    &-instagram
-      &:hover
-        background-image: url("../img/instagram.svg")
   // модельное окно
   .modal
     &__dialog
@@ -346,8 +335,6 @@
       &__strong
         font-size: 30px
         line-height: 38px
-    &-subscribe
-      width: 100%
   // отзывы
   .reviews
     &__title
@@ -447,7 +434,8 @@
         font-size: 30px
         line-height: 44px
     &-subscribe
-      width: 95%
+      width: 280px
+      margin-left: auto
       &__input
         padding-left: 20px
   // отзывы
@@ -560,6 +548,8 @@
       &-group
         flex-basis: 100%
         height: 52px
+      &-wrapper
+        flex-direction: column
     &__message
       margin-bottom: 13px
     &__info
@@ -574,10 +564,6 @@
       flex-direction: column
       align-items: start
       height: 47px
-  .img
-    &-facebook
-      width: 25px
-      height: 30px
   // модульное окно
   .modal
     &__dialog

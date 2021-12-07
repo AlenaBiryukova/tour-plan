@@ -659,13 +659,16 @@
       </h2>
 
       <form action="send.php" method="post" class="form newsletter-subscribe">
+
         <input
+          title="Please enter your email address"
           name="email"
           type="email"
           placeholder="Your email address"
           class="newsletter-subscribe__input"
           required
         >
+
         <button class="newsletter-subscribe__button">
           <span>Send</span>
         </button>
@@ -916,15 +919,25 @@
           <h3 class="footer__title footer__title--inline">Social&nbsp;Network</h3>
           
           <div class="footer__social-links">
-            <a href="https://www.facebook.com" target="_blank" class="footer__link img-facebook">
-              <!-- <img class="footer__icon-facebook" src="img/facebook.svg" alt="Icon: Facebook"> -->
-            </a>
-            <a href="https://www.youtube.com" target="_blank" class="footer__link img-youtube">
-              <!-- <img class="footer__icon-youtube" src="img/youtube.svg" alt="Icon: YouTube"> -->
-            </a>
-            <a href="https://www.instagram.com" target="_blank" class="footer__link img-instagram">
-              <!-- <img class="footer__icon-instagram" src="img/instagram.svg" alt="Icon: Instagram"> -->
-            </a>   
+    
+              <a href="https://www.facebook.com/" target="_blank" class="footer__link">
+                <svg class="footer__img">
+                  <use xlink:href="img/social.svg#facebook"></use>
+                </svg>
+              </a>
+
+              <a href="https://www.youtube.com/" target="_blank" class="footer__link">
+                <svg class="footer__img">
+                  <use xlink:href="img/social.svg#youtube"></use>
+                </svg>
+              </a>
+
+              <a href="https://www.instagram.com/" target="_blank" class="footer__link">
+                <svg class="footer__img">
+                  <use xlink:href="img/social.svg#instagram"></use>
+                </svg>
+              </a>
+
           </div>
           <!-- /.footer__social-links -->
         
@@ -1007,40 +1020,45 @@
 
           <form class="form footer__form" action="send.php" method="post">
 
-            <div class="footer__input-group">
-            <input
-              name="name"
-              class="input footer__input"
-              type="text"
-              placeholder="Your Full Name*"
-              minlength="2"
-              required
-            >
+            <div class="footer__input-wrapper">
+              <div class="footer__input-group">
+                <input
+                  name="name"
+                  class="input footer__input"
+                  type="text"
+                  placeholder="Your Full Name*"
+                  minlength="2"
+                  required
+                >
+              </div>
+
+              <div class="footer__input-group">
+                <input
+                  name="phone"
+                  class="input footer__input phone-number"
+                  type="tel"
+                  placeholder="Phone Number*"
+                  minlength="18"
+                  required
+                >
+              </div>
             </div>
+            <!-- /.footer__input-wrapper -->
 
-            <div class="footer__input-group">
-              <input
-                name="phone"
-                class="input footer__input phone-number"
-                type="tel"
-                placeholder="Phone Number*"
-                required
-              >
-            </div>
+              <textarea
+                name="message"
+                class="message footer__message"
+                cols="30"
+                rows="10"
+                placeholder="Message"
+              ></textarea>
 
-            <textarea
-              name="message"
-              class="message footer__message"
-              cols="30"
-              rows="10"
-              placeholder="Message"
-            ></textarea>
+              <button class="button footer__button" type="submit">Send</button>
 
-            <button class="button footer__button" type="submit">Send</button>
+              <span class="footer__info">* Required Fields</span>
 
-            <span class="footer__info">* Required Fields</span>
           </form>
-        
+
         </div>
         <!-- /.footer__contact-form -->      
       
@@ -1095,6 +1113,7 @@
           class="input modal__input phone-number"
           type="tel"
           placeholder="Phone Number*"
+          minlength="18"
           required
         >
         <input
@@ -1128,6 +1147,7 @@
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
   <script src="js/main.js"></script>
 
 </body>
