@@ -1,7 +1,8 @@
 .footer
   background-color: $dark
   color: $light
-  padding: 108px 0 46px 0
+  &__container
+    padding: 108px 0 46px 0
   &-wrapper
     display: grid
     grid-template-columns: repeat(4, minmax(min-content, 1fr))
@@ -82,18 +83,40 @@
     line-height: 160%
     color: $text-subscribe
     margin-bottom: 21px
+  &__form
+    margin-top: 35px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
   &__input
     width: 100%
+    margin-bottom: 15px
+    padding: 19px 23px 18px 23px
+    width: 100%
+    border: none
+    border-radius: 4px
     &-group
-      margin-bottom: 15px
-      flex-basis: 47%
+      // margin-bottom: 15px
+      // flex-basis: 47%
+      position: relative
+      width: 47%
     &-wrapper
       display: flex
       justify-content: space-between
       width: 100%
   &__message
-    flex-basis: 100%
-    margin-bottom: 23px
+    margin-bottom: 19px
+    width: 100%
+    overflow: auto
+    &-wrapper
+      position: relative
+      width: 100%
+      z-index: 6
+  &__info-bottom
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
   &__button
     min-width: 159px
     min-height: 50px
@@ -108,7 +131,6 @@
     justify-content: space-between
     align-items: center
     width: 696px
-    margin-top: 97px
     margin-left: auto
     margin-right: 0
     &-image

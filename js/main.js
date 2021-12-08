@@ -80,7 +80,7 @@ $(document).ready(function () {
 
   $(".form").each(function () {
     $(this).validate({
-      errorClass: "invalid",
+      errorClass: "validate-error",
       messages: {
         name: {
           required: "Please enter your name",
@@ -88,44 +88,28 @@ $(document).ready(function () {
         },
         email: {
           required: "Please enter your email address",
-          email: "Your email address must be in the format of name@domain.com",
+          email: "Format for email address: name@domain.com",
         },
         phone: {
           required: "Please enter your phone number",
-          // phone: "Your phone number must be in the format of +7 (999) 999-99-99",
+          phone: "Format for phone number: +7 (999) 999-99-99",
           minlength: jQuery.validator.format("At least 18 characters required!"),
         },
       },
     });
-    $('.phone-number').mask('+7 (999) 999-99-99');
-    
-  });
 
-  // $(".newsletter-form").validate({
-  //   errorClass: "invalid-newsletter",
-  //   messages: {
-  //     emailSubscribe: {
-  //       required: "We need your email address to contact you",
-  //       email: "Format for email address - name@domain.com"
-  //     }
-  //   }
-  // });
-
-
-  $( function() {
-    var tooltips = $( "[title]" ).tooltip({
-      position: {
-        my: "left top",
-        at: "left+5 top+60",
-        collision: "none"
-      }
+    $(".newsletter-subscribe").validate({
+    errorClass: "validate-newsletter",
+    messages: {
+      email: {
+        required: "Please enter your email address",
+        email: "Format for email address: name@domain.com",
+      },
+    },
     });
-    $(".newsletter-subscribe__button")
-      .on("click", function () {
-        tooltips.tooltip("open");
-      });
+
+    $('.phone-number').mask('+7 (999) 999-99-99');
   });
-  
 
 
 });

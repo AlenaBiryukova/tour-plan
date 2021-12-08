@@ -60,23 +60,54 @@ img
   line-height: 15px
   cursor: pointer
 
-.ui-tooltip
-  padding: 10px
-  color: $primary
-  border-radius: 20px
-  font-weight: 700
-  font-size: 12px
-  line-height: 15px
-  text-transform: uppercase
-  box-shadow: 0 0 7px $primary
-  max-width: 300px
-  text-align: center
-  overflow: hidden
-  position: absolute
+label.validate
+  &-newsletter
+    padding: 5px 10px
+    position: absolute
+    top: -27px
+    left: 0
+    display: block
+    width: 100%
+    border-radius: 4px
+    background-color: rgba($primary, 0.6)
+    font-size: 12px
+    font-weight: 400
+    line-height: 15px
+    color: $light
+    // transform: translateY(90%)
+    z-index: 15
+    &::before
+      content: ""
+      position: absolute
+      left: 15px
+      bottom: -5px
+      z-index: 4
+      width: 8px
+      height: 8px
+      background-color: rgba($primary, 0.6)
+      transform: rotate(45deg)
 
-.invalid
-  color: $primary
-  font-weight: 400
-  font-size: 12px
-  line-height: 15px
-  box-shadow: 0 0 10px $primary
+label.validate
+  &-error
+    padding: 6px 10px
+    position: absolute
+    top: -12px
+    left: 0
+    display: block
+    width: 91%
+    border-radius: 4px
+    background-color: rgba($primary, 0.9)
+    font-size: 12px
+    font-weight: 400
+    line-height: 15px
+    color: $light
+    &::after
+      content: ""
+      position: absolute
+      left: 15px
+      bottom: -5px
+      z-index: 4
+      width: 8px
+      height: 8px
+      background-color: rgba($primary, 0.9)
+      transform: rotate(45deg)

@@ -15,13 +15,16 @@
       opacity: 1
   &__dialog
     position: fixed
+    flex-direction: column
+    align-items: center
+    position: fixed
     left: 50%
-    top: 67%
-    transform: translate(-50%, -62%)
+    top: 64%
+    transform: translate(-50%, -64%)
     z-index: 105
     max-width: 480px
     max-height: 100vh
-    padding: 37px 88px 54px 91px
+    padding: 15px 88px 23px 91px
     border-radius: 8px
     background-color: $dark
     color: $light
@@ -38,28 +41,41 @@
     top: 17px
     text-decoration: none
     cursor: pointer
+  &__form
+    width: 302px
   &__input
-    flex-basis: 100%
-    margin-top: 14px
+    margin-bottom: 15px
+    width: 100%
+    &-wrapper
+      position: relative
+      z-index: 6
+      width: 100%
   &__message
-    margin-top: 15px
-    flex-basis: 100%
-  &__button
-    min-width: 159px
-    min-height: 50px
-    padding: 18px
-    margin-top: 17px
+    margin-bottom: 11px
+    width: 100%
+    &-wrapper
+      position: relative
+      z-index: 6
+      width: 100%
   &__title
-    margin: 0
+    margin: 20px 0px 14px 0
     font-weight: 700
     font-size: 18px
     line-height: 23px
     text-transform: uppercase
     text-align: center
   &__info
+    display: flex
+    justify-content: space-between
+    align-items: baseline
+    width: 302px
+  &__button
+    min-width: 159px
+    min-height: 50px
+    padding: 18px
+    margin-bottom: 16px
+  &__text
     font-weight: 700
     font-size: 12px
     line-height: 15px
     color: #E0E0E0
-  &__form
-    align-items: baseline
