@@ -113,4 +113,11 @@ $(document).ready(function () {
 
   AOS.init();
 
+  AOS.init({
+  disable: function() {
+    var maxWidth = 992;
+    return window.innerWidth < maxWidth;
+  }
+});
+
 });
