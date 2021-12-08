@@ -15,6 +15,7 @@
     rel="stylesheet"
   >
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -194,7 +195,7 @@
 
       <div class="hotel-grid">
 
-        <div class="swiper hotel-slider hotel__slider">
+        <div class="swiper hotel-slider hotel__slider" data-aos="fade-right" data-aos-delay="100">
           <div class="swiper-wrapper">
             <div class="swiper-slide hotel-slider__slide">
               <img
@@ -238,7 +239,7 @@
         </div>
         <!-- /.swiper hotel-slider hotel__slider -->
 
-        <div class="hotel-booking-map">
+        <div class="hotel-booking-map" data-aos="fade-left" data-aos-delay="300">
           <div class="booking">
           
             <div class="booking__info">
@@ -321,7 +322,7 @@
   
       <div class="packages-wrapper">
         <!-- Развернутая карточка -->
-        <div class="pack detailed-pack">
+        <div class="pack detailed-pack" data-aos="fade-up" data-aos-delay="100">
           <!-- Картинка и offer -->
           <div class="pack__image-offer">
             <img src="img/packages-1.jpg" alt="Hotel Blue Haven" class="pack__image detailed-pack__image">
@@ -390,7 +391,7 @@
         <!-- /.pack packages-detailed -->
   
         <!-- Обычная карточка -->
-        <div class="pack">
+        <div class="pack" data-aos="fade-up" data-aos-delay="200">
           <!-- Картинка и offer -->
           <div class="pack__image-offer">
             <img src="img/packages-2.jpg" alt="LUX* Belle Mare" class="pack__image">
@@ -434,7 +435,7 @@
         <!-- /.pack -->
   
         <!-- Обычная карточка -->
-        <div class="pack">
+        <div class="pack" data-aos="fade-up" data-aos-delay="300">
           <!-- Картинка и offer -->
           <div class="pack__image-offer">
             <img src="img/packages-3.jpg" alt="White Palace" class="pack__image">
@@ -478,7 +479,7 @@
         <!-- /.pack -->
   
         <!-- Обычная карточка -->
-        <div class="pack">
+        <div class="pack" data-aos="fade-up" data-aos-delay="400">
           <!-- Картинка и offer -->
           <div class="pack__image-offer">
             <img src="img/packages-4.jpg" alt="Luxury Place" class="pack__image">
@@ -522,7 +523,7 @@
         <!-- /.pack -->
   
         <!-- Обычная карточка -->
-        <div class="pack">
+        <div class="pack" data-aos="fade-up" data-aos-delay="500">
           <!-- Картинка и offer -->
           <div class="pack__image-offer">
             <img src="img/packages-5.jpg" alt="Hotel Five Star" class="pack__image">
@@ -575,12 +576,12 @@
   <section class="newsletter">
     <div class="newsletter-wrapper">
       
-      <h2 class="newsletter-title">
+      <h2 class="newsletter-title" data-aos="fade-right" data-aos-delay="100">
         subscribe to our
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
 
-      <form action="send.php" method="post" class="newsletter-subscribe">
+      <form action="send.php" method="post" class="newsletter-subscribe" data-aos="fade-left" data-aos-delay="100">
         <!-- title="Please enter your email address" -->
         <input
           name="email"
@@ -609,7 +610,7 @@
       <div class="swiper reviews-slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="reviews-slider__item">
+            <div class="reviews-slider__item" data-aos="flip-left">
               <div class="reviews-slider__profile">
                 <img
                   src="img/reviews__avatar-1.jpeg"
@@ -714,7 +715,7 @@
       <h2 class="activities__title">Other Activities</h2>
 
       <div class="activities-wrapper">
-        <div class="card card-1 activities__card">
+        <div class="card card-1 activities__card" data-aos="fade-left" data-aos-delay="100">
           <img
             src="img/activities-1.jpg"
             alt="The curious corner of chamarel"
@@ -724,7 +725,7 @@
           <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
 
-        <div class="card card-2 activities__card">
+        <div class="card card-2 activities__card" data-aos="fade-left" data-aos-delay="200">
           <img
             src="img/activities-2.jpg"
             alt="Gymkhana club golf course"
@@ -734,7 +735,7 @@
           <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
 
-        <div class="card card-3 activities__card">
+        <div class="card card-3 activities__card" data-aos="fade-left" data-aos-delay="300">
           <img
             src="img/activities-3.jpg"
             alt="Tamarind falls hiking trip - full day"
@@ -744,7 +745,7 @@
           <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
 
-        <div class="card card-4 activities__card">
+        <div class="card card-4 activities__card" data-aos="fade-left" data-aos-delay="400">
           <img
             src="img/activities-4.jpg"
             alt="The blue marine discovery quest"
@@ -1084,6 +1085,7 @@
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
 
 </body>
