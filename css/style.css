@@ -2830,12 +2830,12 @@ label.validate-error::after {
   .navbar-menu__link:hover {
     color: #ec1f46;
   }
-  .hotel__call-number:hover {
+  .booking__call-description:hover {
     color: #ec1f46;
   }
   .search__button:hover {
     background: #0A223D;
-    color: #ec1f46;
+    color: #FFFFFF;
     -webkit-box-shadow: inset 0 0 0 3px #ec1f46;
             box-shadow: inset 0 0 0 3px #ec1f46;
   }
@@ -2850,13 +2850,13 @@ label.validate-error::after {
   }
   .pack-price__button:hover {
     background: rgba(0, 0, 0, 0);
-    color: #ec1f46;
+    color: #FFFFFF;
     -webkit-box-shadow: inset 0 0 0 3px #ec1f46;
             box-shadow: inset 0 0 0 3px #ec1f46;
   }
   .button:hover {
     background: rgba(0, 0, 0, 0);
-    color: #ec1f46;
+    color: #FFFFFF;
     -webkit-box-shadow: inset 0 0 0 3px #ec1f46;
             box-shadow: inset 0 0 0 3px #ec1f46;
   }
