@@ -566,10 +566,6 @@ label.validate-error::after {
   font-weight: 700;
 }
 
-.navbar-menu__link:hover {
-  color: #ec1f46;
-}
-
 .navbar-menu__item--mobile--visible {
   display: none;
 }
@@ -690,10 +686,6 @@ label.validate-error::after {
 .breadcrumb-list__link {
   text-decoration: none;
   color: inherit;
-}
-
-.breadcrumb-list__link:hover {
-  color: #ec1f46;
 }
 
 .hotel {
@@ -977,10 +969,6 @@ label.validate-error::after {
   text-transform: uppercase;
 }
 
-.booking__call-number:hover {
-  color: #ec1f46;
-}
-
 .booking__call-description {
   margin-left: 9px;
 }
@@ -1011,7 +999,7 @@ label.validate-error::after {
   overflow: hidden;
 }
 
-.button__thankyou {
+.button-thankyou {
   margin-top: 40px;
   min-width: 110px;
   min-height: 40px;
@@ -1354,6 +1342,17 @@ label.validate-error::after {
   cursor: pointer;
 }
 
+::-webkit-scrollbar {
+  width: 3px;
+  background-color: #f5fafe;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #98ccf5;
+  border-radius: 3px;
+}
+
 .packages {
   padding: 41px 0 70px 0;
 }
@@ -1511,6 +1510,10 @@ label.validate-error::after {
   cursor: pointer;
 }
 
+.detailed-pack {
+  overflow: hidden;
+}
+
 .detailed-pack__image {
   width: 366px;
   height: 100%;
@@ -1535,8 +1538,13 @@ label.validate-error::after {
 }
 
 .detailed-pack__information {
+  max-width: 299px;
+  height: 155px;
+  overflow: auto;
+}
+
+.detailed-pack__information-text {
   margin: 0;
-  max-width: 300px;
   font-weight: 400;
   font-size: 14px;
   line-height: 158.6%;
@@ -1688,10 +1696,6 @@ label.validate-error::after {
   cursor: pointer;
 }
 
-.footer__link:hover {
-  color: #ec1f46;
-}
-
 .footer__text {
   font-weight: 400;
   font-size: 14px;
@@ -1800,10 +1804,6 @@ label.validate-error::after {
   height: 21px;
 }
 
-.footer__img:hover {
-  fill: #ec1f46;
-}
-
 .main-information {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1821,10 +1821,6 @@ label.validate-error::after {
   color: #FFFFFF;
   text-decoration: none;
   cursor: pointer;
-}
-
-.main-information__link:hover {
-  color: #ec1f46;
 }
 
 .modal__overlay {
@@ -1988,20 +1984,11 @@ label.validate-error::after {
     font-size: 12px;
     line-height: 15px;
   }
-  .navbar-menu__link:hover {
-    color: inherit;
-  }
   .search__input {
     width: 340px;
   }
   .user__avatar {
     margin-left: 26px;
-  }
-  .user__name:hover {
-    color: #333333;
-  }
-  .breadcrumb-list__link:hover {
-    color: inherit;
   }
   .hotel {
     padding-bottom: 56px;
@@ -2028,9 +2015,6 @@ label.validate-error::after {
     margin-right: 20px;
     margin-bottom: 0;
     padding: 28px 22px;
-  }
-  .booking__call-number:hover {
-    color: inherit;
   }
   .map {
     width: 340px;
@@ -2078,7 +2062,7 @@ label.validate-error::after {
     left: 0px;
   }
   .activities {
-    padding-top: 47px;
+    padding-top: 45px;
     padding-bottom: 49px;
   }
   .activities-wrapper {
@@ -2096,12 +2080,12 @@ label.validate-error::after {
     max-width: 200px;
   }
   .footer__container {
-    padding: 38px 0 46px 0;
+    padding: 72px 0 46px 0;
   }
   .footer-wrapper {
     -ms-grid-columns: (1fr)[8];
         grid-template-columns: repeat(8, 1fr);
-    grid-row-gap: 14px;
+    grid-row-gap: 48px;
     margin-bottom: 58px;
   }
   .footer__input-group {
@@ -2163,13 +2147,13 @@ label.validate-error::after {
   }
   .footer__title-contact {
     line-height: 47px;
-    margin-top: 39px;
+    margin-top: 5px;
     margin-bottom: 14px;
   }
   .footer__title--mb-3 {
     margin-left: 0px;
-    margin-bottom: 35px;
-    margin-top: 37px;
+    margin-bottom: 0px;
+    margin-top: 3px;
   }
   .footer__icon-wrapper {
     min-width: 47px;
@@ -2181,9 +2165,6 @@ label.validate-error::after {
   .footer__text {
     margin-bottom: 21px;
     line-height: 158%;
-  }
-  .footer__link:hover {
-    color: inherit;
   }
   .footer__message {
     margin-bottom: 19px;
@@ -2198,9 +2179,6 @@ label.validate-error::after {
   }
   .footer__info {
     margin-right: 5px;
-  }
-  .main-information__link:hover {
-    color: inherit;
   }
   .modal__dialog {
     max-width: 440px;
@@ -2412,6 +2390,7 @@ label.validate-error::after {
     line-height: 38px;
   }
   .newsletter-subscribe {
+    margin-left: 0px;
     margin-bottom: 81px;
   }
   .reviews__title {
@@ -2822,6 +2801,64 @@ label.validate-error::after {
   }
   .modal__form {
     width: 212px;
+  }
+  .stars {
+    -ms-flex-preferred-size: 23%;
+        flex-basis: 23%;
+  }
+}
+
+@media (min-width: 992px) {
+  .card__button:hover {
+    background: #0A223D;
+    color: #FFFFFF;
+    -webkit-box-shadow: inset 0 0 0 3px #ec1f46;
+            box-shadow: inset 0 0 0 3px #ec1f46;
+  }
+  .breadcrumb-list__link:hover {
+    color: #ec1f46;
+  }
+  .footer__link:hover {
+    color: #ec1f46;
+  }
+  .footer__img:hover {
+    fill: #ec1f46;
+  }
+  .main-information__link:hover {
+    color: #ec1f46;
+  }
+  .navbar-menu__link:hover {
+    color: #ec1f46;
+  }
+  .hotel__call-number:hover {
+    color: #ec1f46;
+  }
+  .search__button:hover {
+    background: #0A223D;
+    color: #ec1f46;
+    -webkit-box-shadow: inset 0 0 0 3px #ec1f46;
+            box-shadow: inset 0 0 0 3px #ec1f46;
+  }
+  .user__name:hover {
+    color: #ec1f46;
+  }
+  .newsletter-subscribe__button:hover {
+    background: #0A223D;
+    color: #FFFFFF;
+    -webkit-box-shadow: inset 0 0 0 3px #ec1f46;
+            box-shadow: inset 0 0 0 3px #ec1f46;
+  }
+  .pack-price__button:hover {
+    background: rgba(0, 0, 0, 0);
+    color: #ec1f46;
+    -webkit-box-shadow: inset 0 0 0 3px #ec1f46;
+            box-shadow: inset 0 0 0 3px #ec1f46;
+  }
+  .button:hover {
+    background: rgba(0, 0, 0, 0);
+    color: #ec1f46;
+    -webkit-box-shadow: inset 0 0 0 3px #ec1f46;
+            box-shadow: inset 0 0 0 3px #ec1f46;
   }
 }
 /*# sourceMappingURL=style.css.map */

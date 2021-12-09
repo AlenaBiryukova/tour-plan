@@ -1,3 +1,11 @@
+::-webkit-scrollbar
+  width: 3px
+  background-color: $secondary
+  border-radius: 3px
+::-webkit-scrollbar-thumb
+  background-color: darken(#F5FAFE, 20%)
+  border-radius: 3px
+
 .packages
   padding: 41px 0 70px 0
   &__title
@@ -91,6 +99,7 @@
 
 .detailed
   &-pack
+    overflow: hidden
     &__image
       width: 366px
       height: 100%
@@ -105,9 +114,12 @@
       align-items: end
       grid-template-rows: 15% 160px 135px auto
     &__information
-      margin: 0
-      max-width: 300px
-      font-weight: 400
-      font-size: 14px
-      line-height: 158.6%
-      color: $light
+      max-width: 299px
+      height: 155px
+      overflow: auto
+      &-text
+        margin: 0
+        font-weight: 400
+        font-size: 14px
+        line-height: 158.6%
+        color: $light
