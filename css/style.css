@@ -361,6 +361,17 @@ img {
   max-width: 100%;
 }
 
+::-webkit-scrollbar {
+  width: 3px;
+  background-color: #f5fafe;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #98ccf5;
+  border-radius: 3px;
+}
+
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1292,7 +1303,6 @@ label.validate-error::after {
   height: 255px;
   border-radius: 6px;
   padding: 24px 26px;
-  overflow: hidden;
 }
 
 .card::before {
@@ -1327,6 +1337,7 @@ label.validate-error::after {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  overflow: auto;
 }
 
 .card__button {
@@ -1340,17 +1351,6 @@ label.validate-error::after {
   border: none;
   background-color: #ec1f46;
   cursor: pointer;
-}
-
-::-webkit-scrollbar {
-  width: 3px;
-  background-color: #f5fafe;
-  border-radius: 3px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #98ccf5;
-  border-radius: 3px;
 }
 
 .packages {
@@ -2060,6 +2060,9 @@ label.validate-error::after {
     max-width: 580px;
     padding: 0px 60px 28px 65px;
   }
+  .reviews-slider__item::after, .reviews-slider__item::before {
+    display: none;
+  }
   .reviews-slider__button {
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -2243,7 +2246,7 @@ label.validate-error::after {
   }
   .navbar-button--visible {
     display: block;
-    overflow: scroll;
+    overflow: auto;
   }
   .navbar-menu {
     -webkit-box-orient: vertical;
@@ -2414,9 +2417,6 @@ label.validate-error::after {
   .reviews-slider__item {
     padding: 0 30px 30px;
   }
-  .reviews-slider__item::after, .reviews-slider__item::before {
-    display: none;
-  }
   .reviews-slider__button {
     top: 30px;
   }
@@ -2513,7 +2513,7 @@ label.validate-error::after {
 
 @media (max-width: 576px) {
   .container {
-    max-width: 280px;
+    max-width: 88%;
   }
   .logo {
     width: 98px;
@@ -2586,6 +2586,11 @@ label.validate-error::after {
   }
   .reviews-slider__text {
     line-height: 158%;
+  }
+  .reviews-slider__profile {
+    margin-top: -46px;
+    margin-bottom: 33px;
+    margin-right: 3px;
   }
   .activities {
     padding-top: 22px;

@@ -94,6 +94,8 @@
       &__item
         max-width: 580px
         padding: 0px 60px 28px 65px
+        &::after, &::before
+          display: none
       &__button
         top: 50%
         transform: translateY(-50%)
@@ -230,7 +232,7 @@
       padding-top: 10px
       &--visible
         display: block
-        overflow: scroll
+        overflow: auto
     &-menu
       flex-direction: column
       &__item
@@ -352,8 +354,6 @@
     &-slider
       &__item
         padding: 0 30px 30px
-        &::after, &::before
-          display: none
       &__button
         top: 30px
         &--next
@@ -416,7 +416,7 @@
 
 @media (max-width: 576px)
   .container
-    max-width: 280px
+    max-width: 88%
   // шапка
   .logo
     width: 98px
@@ -476,6 +476,10 @@
         padding: 0px 30px 37px 31px
       &__text
         line-height: 158%
+      &__profile
+        margin-top: -46px
+        margin-bottom: 33px
+        margin-right: 3px
   // о досуге
   .activities
     padding-top: 22px
