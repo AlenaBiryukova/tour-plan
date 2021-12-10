@@ -1953,6 +1953,13 @@ label.validate-error::after {
     width: 230px;
     height: 230px;
   }
+  .detailed-pack__info {
+    -ms-grid-rows: 15% 180px 127px auto;
+        grid-template-rows: 15% 180px 127px auto;
+  }
+  .detailed-pack__information {
+    height: 180px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -2037,6 +2044,9 @@ label.validate-error::after {
     -ms-grid-columns: (minmax(min-content, 350px))[2];
         grid-template-columns: repeat(2, minmax(-webkit-min-content, 350px));
         grid-template-columns: repeat(2, minmax(min-content, 350px));
+  }
+  .detailed__information {
+    height: 177px;
   }
   .reviews {
     padding: 37px 0 76px 0;
@@ -2368,6 +2378,9 @@ label.validate-error::after {
     padding: 20px;
     -ms-grid-rows: 15% 190px 122px auto;
         grid-template-rows: 15% 190px 122px auto;
+  }
+  .detailed-pack__information {
+    height: 186px;
   }
   .newsletter-wrapper {
     max-width: 576px;
@@ -2832,12 +2845,6 @@ label.validate-error::after {
   }
   .booking__call-description:hover {
     color: #ec1f46;
-  }
-  .search__button:hover {
-    background: #0A223D;
-    color: #FFFFFF;
-    -webkit-box-shadow: inset 0 0 0 3px #ec1f46;
-            box-shadow: inset 0 0 0 3px #ec1f46;
   }
   .user__name:hover {
     color: #ec1f46;

@@ -4,6 +4,13 @@
   .card
     width: 230px
     height: 230px
+  .detailed
+    &-pack
+      &__info
+        grid-template-rows: 15% 180px 127px auto
+      &__information
+        height: 180px
+
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -72,6 +79,9 @@
       line-height: 43px
     &-wrapper
       grid-template-columns: repeat(2,minmax(min-content, 350px))
+  .detailed
+    &__information
+      height: 177px
 
   // отзывы
   .reviews
@@ -314,6 +324,8 @@
       &__info
         padding: 20px
         grid-template-rows: 15% 190px 122px auto
+      &__information
+        height: 186px
   // рассылка
   .newsletter
     &-wrapper
@@ -655,12 +667,6 @@
     &__call-description
       &:hover
         color: $primary
-  .search
-    &__button
-      &:hover
-        background: $dark
-        color: $light
-        box-shadow: inset 0 0 0 3px $primary
   .user
     &__name
       &:hover
